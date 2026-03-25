@@ -7,7 +7,7 @@
 
   [![EN](https://img.shields.io/badge/English-🇬🇧-blue)](#english)
   [![RU](https://img.shields.io/badge/Русский-🇷🇺-red)](#russian)
-  ![Version 0.1.0](https://img.shields.io/badge/Version-0.1.0-orange.svg)
+  ![Version 0.1.1](https://img.shields.io/badge/Version-0.1.1-orange.svg)
   ![Stars](https://img.shields.io/github/stars/AlexandrAnatoliev/project-euler-website.svg?style=flat)
   ![Forks](https://img.shields.io/github/forks/AlexandrAnatoliev/project-euler-website.svg?style=flat)
   [![PRs Welcome](https://img.shields.io/badge/PR:s-welcome-brightgreen.svg)](https://github.com/AlexandrAnatoliev/project-euler-website/pulls)
@@ -16,7 +16,6 @@
 
   <p>Данный проект имеет подмодуль с CSS-настройки для моего сайта
     <a href="https://github.com/AlexandrAnatoliev/project-euler-css">Project-Euler-CSS</a>.
-    [Project-Euler-CSS](https://github.com/AlexandrAnatoliev/project-euler-css).
     Выделение CSS-настроек в отдельный репозиторий, позволяет
     использовать их повторно в разных проектах и избавляет от необходимости
     вносить одни и те же изменения в каждый проект.
