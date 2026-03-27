@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="src/styles/main.css">
+
+    <title>Project Euler Blog: установка XAMPP на сервер</title>
+    <meta name="description"
+          content="устанавливаем XAMPP на удаленный сервер">
+  </head>
+  <body>
+    <header>
+      <div class="favicon">
+        <a href="/"><img src="favicon.ico" alt="Проект Эйлера блог"
+                                           class="favicon"></a>
+      </div>
+      <div class="github">
+        <a href="https://github.com/AlexandrAnatoliev"><img
+           src="images/logo/github.svg" alt="Ссылка на github"
+                                        class="github"></a>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html"><b>Project Euler Blog</b></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h1 id="top">Установка XAMPP на сервер</h1>
+
+      <h3>Подготовка и загрузка</h3>
+
+      <p>Сначала необходимо обновить список пакетов и перейти в директорию для загрузки 
+      (например, /tmp).</p>
+<pre class="vimcode">
+sudo apt update
+cd /tmp
+</pre>
+
+      <p>Теперь нужно скачать установщик. Последнюю версию можно найти на официальном сайте 
+      <a href="https://www.apachefriends.org/download.html">Apache Friends</a>.</p>
+
+      <p>Скопировать ссылку на установщик для Linux (файл с расширением .run), использовать wget для загрузки. 
+      Например, для версии с PHP 8.2.12</p>
+      <div class="vimcode">
+        wget https://sourceforge.net/projects/xampp/files/XAMPP%20Linux/8.2.12/xampp-linux-x64-8.2.12-0-installer.run
+      </div>
+    </section>
+
+    <section>
+      <h3>Настройка прав и запуск установки</h3>
+
+      <p>Сделать скачанный файл исполняемым и запустить его с правами суперпользователя.</p>
+<pre class="vimcode">
+sudo chmod +x xampp-linux-x64-8.2.12-0-installer.run
+sudo ./xampp-linux-x64-8.2.12-0-installer.run
+</pre>
+    </section>
+
+    <section>
+      <h3>Управление службами XAMPP</h3>
+
+      <p>Запустить все службы (Apache, MySQL, FTP):</p>
+      <div class="vimcode">
+        sudo /opt/lampp/lampp start
+      </div>
+
+      <p>Остановить все службы:</p>
+      <div class="vimcode">
+        sudo /opt/lampp/lampp stop
+      </div>
+
+      <p>Проверить статус:</p>
+      <div class="vimcode">
+        sudo /opt/lampp/lampp status
+      </div>
+      
+      <p>Перезапустить (после изменения конфигурации):</p>
+      <div class="vimcode">
+        sudo /opt/lampp/lampp restart
+      </div>
+    </section>
+
+    <section>
+      
+      <h3>Проверка работы</h3>
+
+      <p>Открыть в браузере адрес сервера: http://ip-вашего-сервера. 
+      Вы должны увидеть панель приветствия XAMPP.</p>
+
+      <p>phpMyAdmin будет доступен по адресу: http://ip-вашего-сервера/phpmyadmin.</p>
+    </section>
+
+    </section>
+      <aside class="article-preview">
+        <h4>Навигация по статьям</h4>
+        <ul>
+          <li><a href="vydelenie-css-v-otdelnyj-repozitorij.html"><b>Выделение CSS-настроек в отдельный репозиторий</b></a></li>
+          <li><b>Установка XAMPP на сервер</b></li>
+          <li><a href="prostoj-sajt-na-html.html"><b>Простой сайт на HTML</b></a></li>
+        </ul>
+      </aside>
+
+      <footer>
+        <ul>
+          <li><a href="#top"><b>Наверх</b></a></li>
+        </ul>
+      </footer>
+    </section>
+  </body>
+</html>
