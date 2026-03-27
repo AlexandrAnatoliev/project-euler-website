@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="src/styles/main.css">
+
+    <title>Project Euler Blog: простой сайт на HTML</title>
+    <meta name="description"
+          content="Запускаем простой HTML на VPS-сервере с XAMPP">
+  </head>
+  <body>
+    <header>
+      <div class="favicon">
+        <a href="/"><img src="favicon.ico" alt="Проект Эйлера блог"
+                                           class="favicon"></a>
+      </div>
+      <div class="github">
+        <a href="https://github.com/AlexandrAnatoliev"><img
+           src="images/logo/github.svg" alt="Ссылка на github"
+                                        class="github"></a>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html"><b>Project Euler Blog</b></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h1 id="top">Простой сайт на HTML</h1>
+
+      <p>Чтобы сделать сайт доступным из любой точки мира, самым простым вариантом 
+      будет запустить его HTML-страницу на VPS-сервере с XAMPP. 
+      Весь процесс можно разбить на несколько простых шагов.</p>
+
+      <h3>Размещение HTML-файла</h3>
+
+      <p>По умолчанию XAMPP использует папку htdocs в качестве корневой директории сайта. 
+      Это значит, что все файлы для веб-доступа должны лежать именно там.</p>
+      <p>На Ubuntu полный путь к этой папке обычно выглядит так:</p>
+      <div class="vimcode">
+        /opt/lampp/htdocs/
+      </div>
+
+      <p>Что нужно сделать:
+        <ul>
+          <li>Подключиться к VPS по SSH.</li>
+          <li>Поместить HTML-файл (например, <b>index.html</b>) в эту директорию.</li>
+          <li>Если есть целая папка с сайтом (например, <b>мой-сайт</b>), можно загрузить её целиком, 
+            и путь к файлам будет таким:</li>
+        </ul>
+        <div class="vimcode">
+          /opt/lampp/htdocs/мой-сайт/index.html
+        </div>
+      </p>
+    </section>
+    
+    <section>
+      <h3>Запуск веб-сервера</h3>
+
+      <p>Самый простой способ управлять сервисами XAMPP — использовать его графическую панель управления. 
+      Однако для VPS, где графического интерфейса обычно нет, удобнее всего работать из командной строки.</p>
+
+      <p>Основные команды для управления XAMPP:
+        <ul>
+          <li>Запустить все сервисы (Apache и MySQL):</li>
+          <div class="vimcode">
+            sudo /opt/lampp/lampp start
+          </div>
+          <li>Остановить все сервисы:</li>
+          <div class="vimcode">
+            sudo /opt/lampp/lampp stop
+          </div>
+          <li>Запустить только Apache (веб-сервер):</li>
+          <div class="vimcode">
+            sudo /opt/lampp/lampp startapache
+          </div>
+          <li>Перезапустить все сервисы (например, после изменения настроек):</li>
+          <div class="vimcode">
+            sudo /opt/lampp/lampp restart
+          </div>
+        </ul>
+      </p>
+    </section>
+
+    <section>
+      <h3>Просмотр результата</h3>
+
+      <p>После того как сервер запущен, а порт открыт, открыть браузер 
+      и ввести в адресной строке публичный IP-адрес VPS-сервера.</p>
+
+      <div class="vimcode">
+        http://&lt;IP-адрес&gt;
+      </div>
+
+      <p>Если файлы находятся в папке с именем <b>мой-сайт</b>, то адрес будет выглядеть так:</p>
+      <div class="vimcode">
+        http://&lt;IP-адрес&gt;/мой-сайт/
+      </div>
+
+      <p>На экране должна отобразиться HTML-страница сайта.</p>
+    </section>
+    
+    <section>
+      <aside class="article-preview">
+        <h4>Навигация по статьям</h4>
+        <ul>
+          <li><a href="vydelenie-css-v-otdelnyj-repozitorij.html"><b>Выделение CSS-настроек в отдельный репозиторий</b></a></li>
+          <li><a href="ustanovkar-xamppr-na-server.html"><b>Установка XAMPP на сервер</b></a></li>
+          <li><b>Простой сайт на HTML</b></li>
+        </ul>
+      </aside>
+
+      <footer>
+        <ul>
+          <li><a href="#top"><b>Наверх</b></a></li>
+        </ul>
+      </footer>
+    </section>
+  </body>
+</html>
+
