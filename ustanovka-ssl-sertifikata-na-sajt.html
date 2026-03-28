@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="src/styles/main.css">
+
+    <title>Project Euler Blog: установка SSL-сертификата на сайт</title>
+    <meta name="description"
+          content="Устанавливаю Timeweb SSL-сертификат на сайт на XAMPP">
+  </head>
+  <body>
+    <header>
+      <div class="favicon">
+        <a href="/"><img src="favicon.ico" alt="Проект Эйлера блог"
+                                           class="favicon"></a>
+      </div>
+      <div class="github">
+        <a href="https://github.com/AlexandrAnatoliev"><img
+           src="images/logo/github.svg" alt="Ссылка на github"
+                                        class="github"></a>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html"><b>Project Euler Blog</b></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h1 id="top">Установка SSL-сертификата на сайт</h1>
+      
+      <p>Браузеры помечают сайты без HTTPS как «небезопасные».
+      Чтобы сайт работал через HTTPS необходимо установить SSL-сертификат.</p>
+
+      <h3>Файлы сертификата в Timeweb</h3>
+
+      <p>SSL-сертификат я покупал в Timeweb:</p>
+      <ul>
+        <li>Перейти во вкладку <b>Домены и SSL</b>;</li> 
+        <li>Далее, <b>SSL-сертификаты</b>;</li>
+        <li>Нажать на кнопку <b>Купить сертификат</b></li>
+      </ul>
+
+      <p>Когда сертификат будет выпущен, можно скопировать содержимое его файлов.</p>
+      <ul>
+        <li>Сертификат (CRT) — текст между <b>-----BEGIN CERTIFICATE-----</b> и <b>-----END CERTIFICATE-----</b></li>
+        <li>Ключ (Private KEY) — текст между <b>-----BEGIN PRIVATE KEY-----</b> и <b>-----END PRIVATE KEY-----</b></li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Файлы сертификата на сервере</h3>
+
+      <p>Создать на сервере папки:</p>
+<pre class="vimcode">
+mkdir -p /opt/lampp/etc/ssl.crt
+mkdir -p /opt/lampp/etc/ssl.key
+</pre>
+
+      <p>Создать файл сертификата:</p>
+      <div class="vimcode">
+        vim /opt/lampp/etc/ssl.crt/project-euler.ru.crt
+      </div>
+      <p>Вставить в него содержимое сертификата (включая строки <b>-----BEGIN CERTIFICATE-----</b> 
+      и <b>-----END CERTIFICATE-----</b>).</p>
+
+      <p>Создать файл ключа:</p>
+      <div class="vimcode">
+        vim /opt/lampp/etc/ssl.key/project-euler.ru.key
+      </div>
+      <p>Вставить в него содержимое ключа (включая строки <b>-----BEGIN PRIVATE KEY-----</b> и 
+      <b>-----END PRIVATE KEY-----</b>).</p>
+
+      <p>Установить права доступа:</p>
+<pre class="vimcode">
+chmod 644 /opt/lampp/etc/ssl.crt/project-euler.ru.crt
+chmod 600 /opt/lampp/etc/ssl.key/project-euler.ru.key
+</pre>
+    </section>
+
+    <section>
+      <h3>Настройка виртуального хоста для HTTPS</h3>
+
+      <p>Перейти в файл:</p>
+      <div class="vimcode">
+        vim /opt/lampp/etc/extra/httpd-vhosts.conf
+      </div>
+
+      <p>Добавить в конец файла:</p>
+<pre class="vimcode">
+&lt;VirtualHost *:443&gt;
+    ServerName project-euler.ru
+    ServerAlias www.project-euler.ru
+    DocumentRoot "/opt/lampp/htdocs/project-euler-website"
+
+    &lt;Directory "/opt/lampp/htdocs/project-euler-website"&gt;
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    &lt;/Directory&gt;
+
+    SSLEngine on
+    SSLCertificateFile "/opt/lampp/etc/ssl.crt/project-euler.ru.crt"
+    SSLCertificateKeyFile "/opt/lampp/etc/ssl.key/project-euler.ru.key"
+
+    ErrorLog "/opt/lampp/logs/project-euler-ssl-error.log"
+    CustomLog "/opt/lampp/logs/project-euler-ssl-access.log" combined
+&lt;/VirtualHost&gt;
+</pre>
+
+      <p>Настроить перенаправление с HTTP на HTTPS, для чего изменить блок для порта 80:</p>
+<pre class="vimcode">
+&lt;VirtualHost *:80&gt;
+    ServerName project-euler.ru
+    ServerAlias www.project-euler.ru
+    Redirect permanent / https://project-euler.ru/
+&lt;/VirtualHost&gt;
+</pre>
+
+      <p>Включить SSL-модуль в Apache</p>
+      <div class="vimcode">
+        vim /opt/lampp/etc/httpd.conf
+      </div>
+
+      <p>Раскомментировать строку:</p>
+      <div class="vimcode">
+        LoadModule ssl_module modules/mod_ssl.so
+      </div>
+    </section>
+
+    <section>
+      <h3>Проверка</h3>
+
+      <p>Перезапуск Apache:</p>
+      <div class="vimcode">
+        /opt/lampp/lampp restart
+      </div>
+
+      <p>Проверка в командной строке:</p>
+      <div class="vimcode">
+        curl -k https://project-euler.ru/
+      </div>
+      <p>Должно вернуться содержимое index файла.</p>
+
+      <p>Проверка в браузере:</p>
+      <div class="vimcode">
+        https://project-euler.ru
+      </div>
+      <p>Теперь должен появиться замочек — соединение защищено.</p>
+    </section>
+
+    <section>
+      <aside class="article-preview">
+        <h4>Навигация по статьям</h4>
+        <ul>
+          <li><a href="ustanovka-xampp-na-server.html"><b>Установка XAMPP на сервер</b></a></li>
+          <li><a href="prostoj-sajt-na-html.html"><b>Простой сайт на HTML</b></a></li>
+          <li><b>Установка SSL-сертификата на сайт</b></li>
+        </ul>
+      </aside>
+
+      <footer>
+        <ul>
+          <li><a href="#top"><b>Наверх</b></a></li>
+        </ul>
+      </footer>
+    </section>
+  </body>
+</html>
+
