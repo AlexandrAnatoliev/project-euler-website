@@ -101,7 +101,193 @@
 
       <p>На экране должна отобразиться HTML-страница сайта.</p>
     </section>
+
+    <section>
+      <h2>Пример работы с простым сайтом на HTML</h2>
+      
+      <p>Примером простого сайта на HTML является проект 
+      <a href="https://github.com/AlexandrAnatoliev/project-euler-blog">Project-Euler-Blog</a> 
+      - сборник статей для моего блога.<br> 
+      Я использую его для более легкой верстки, т.к. HTML файлы можно смотреть просто в браузере, 
+      не добавляя в базу данных и не запуская XAMPP.</p>
+    </section>
+
+    <section>
+      <h3>Клонирование репозитория</h3>
+      <p>CSS-настройки для блога выделены в отдельный репозиторий, что позволяет
+      использовать их повторно в разных проектах и избавляет от необходимости
+      вносить одни и те же изменения в каждый проект.</p>
+      
+      <p>Поэтому при клонировании репозитория использовать флаг <b>--recursive</b></p>
+      <div class="vimcode">
+        git clone --recursive https://github.com/AlexandrAnatoliev/project-euler-blog.git
+      </div>
+        
+      <p>Иначе при обычном клонировании папка src/styles будет пустой:</p>
+<pre class="vimcode">
+git clone https://github.com/AlexandrAnatoliev/project-euler-blog.git
+cd project-euler-blog
+ls src/styles/  # пусто или не существует
+</pre>
+
+      <p>В этом случае нужно инициализировать и обновить подмодули:</p>
+<pre class="vimcode">
+git submodule init    
+git submodule update 
+</pre>
+    </section>
     
+    <section>
+      <h3>Обновление CSS-подмодуля до последней версии</h3>
+
+      <p>Перейти в папку подмодуля:</p>
+      <div class="vimcode">
+        cd src/styles
+      </div>
+
+      <p>Обновиться до последнего коммита в ветке main:</p>
+<pre class="vimcode">
+git checkout main
+git pull
+</pre>
+
+      <p>Вернуться в основной репозиторий:</p>
+      <div class="vimcode">
+        cd ../..
+      </div>
+
+      <p>Зафиксировать изменение (новую ссылку на коммит):</p>
+<pre class="vimcode">
+git add src/styles
+git commit -m "Update css to latest version"
+</pre>
+    </section>
+
+    <section>
+      <h2>Для контрибьютеров</h2>
+
+      <p>В случае, если вы заметили какие то неточности в статье или хотите предложить
+      какие-либо изменения в верстке этого сайта, вы всегда можете сделать pull request
+      в этот проект (
+      <a href="https://github.com/AlexandrAnatoliev/project-euler-blog">Project-Euler-Blog</a>).</p>
+
+      <h3>Инструкции по Установке</h3>
+
+      <p>1. Сделайте "форк" этого репозитория нажатием кнопки 
+      "Fork" в правом верхнем углу страницы.  Это создаст копию 
+      репозитория на Вашем GitHub аккаунте.</p>
+
+      <p>2. Клонируйте Ваш "форкнутый" репозиторий нажатием кнопки "Code".<br>
+      Откроется маленькое окно. Скопируйте из него URL и выполните на своем компьютере команду:</p>
+      <div class="vimcode">
+        git clone https://github.com/&lt;your-username&gt;/project-euler-blog.git
+      </div>
+
+      <p>3. Перейдите в папку с проектом:</p>
+      <div class="vimcode">
+        cd project-euler-blog
+      </div>
+
+      <p>4. Добавьте ссылку на оригинальный репозиторий для будущих обновлений:</p>
+      <div class="vimcode">
+        git remote add upstream https://github.com/AlexandrAnatoliev/project-euler-blog.git
+      </div>
+
+      <p><i>Примечание: Здесь должен быть URL оригинального репозитория, а не "форкнутого" вами, 
+        так что username в нем должно быть <b>AlexandrAnatoliev</b>, а не ваш собственный username.</i></p>
+
+      <p>5. Проверьте ремоуты для своего репозитория:</p>
+      <div class="vimcode">
+        git remote -v
+      </div>
+
+      <p>Вы должны увидеть origin (создается автоматически при клонировании) и upstream-ремоуты:</p>
+
+<pre class="vimcode">
+origin  https://github.com/&lt;your-username&gt;/project-euler-blog.git (fetch)
+origin  https://github.com/&lt;your-username&gt/project-euler-blog.git (push)
+upstream        https://github.com/AlexandrAnatoliev/project-euler-blog.git (fetch)
+upstream        https://github.com/AlexandrAnatoliev/project-euler-blog.git (push)
+</pre>
+
+      <p>6.Выполните pull из upstream репозитория в вашу master ветку, 
+      чтобы синхронизировать ее с основным проектом:</p>
+      <div class="vimcode">
+        git pull upstream master
+      </div>
+
+      <p>7. Создайте новую ветку командой:</p>
+      <div class="vimcode">
+        git switch -c fix-issue
+      </div>
+
+      <p>Сейчас вы готовы начать работать с issue.<br> 
+      Помните: каждый раз сначала делать pull из upstream репозитория, чтобы держать содержимое
+      вашего локального репозитория в соответствии с главным проектом.</p> 
+
+      <p><i>Примечание: Рекомендую всегда создавать новую ветку для каждого issue, который вы выполняете!
+        Иначе pull request будут слишком большими и возможно возникнут конфликты слияния.</i></p>
+    </section>
+
+    <section>
+      <h3>Отправка ваших изменений</h3>
+
+      <p>После того как вы решили проблему, вы готовы отправить изменения.</p> 
+
+      <p>1.Добавьте ваши изменения в отслеживание:</p>
+      <div class="vimcode">
+        git add файлы-которые-вы-изменили
+      </div>
+
+      <p>2. Сделайте коммит:</p>
+      <div class="vimcode">
+        git commit -m "Fixed issue"
+      </div>
+
+      <p>3. Отправьте изменения в ваш "форкнутый" репозиторий:</p>
+      <div class="vimcode">
+        git push origin fix-issue
+      </div>
+
+      <p> После того как вы отправили Ваши изменения на 
+        GitHub, вы готовы создать pull request.
+        Перейдите на Ваш "форк" репозитория на GitHub.</p>
+
+      <ul>
+        <li>
+          Вы увидите надпись "fix-issue had recent pushes" (или как ваша ветка 
+          называется) и кнопку "Compare & pull request" на ней.
+        </li>
+        <li>
+          Нажмите кнопку "Compare & pull request" и перейдете на страницу pull 
+          request оригинального репозитория проекта project-euler-blog.
+        </li>
+        <li>
+          Заполните поля title и description подробностями о задаче и Вашем ее решении. 
+          Вы можете также добавить иную информацию, такую как скриншоты, если хотите.
+        </li>
+        <li>
+          В конце нажмите кнопку "Create pull request", чтобы закончить создание pull request.
+        </li>
+      </ul>
+
+      <p>Поздравляю, вы сделали свой вклад в open source на GitHub!<br>
+        Можете расслабиться и подождать пока не сделают
+        ревью вашего кода. Если все хорошо, ваш pull request
+        вольют в основную ветку. Если нет, вам будет 
+      <p><i>Примечание: Помните, что нужно подождать ревью вашего pull request, не закрывайте его сами. 
+        Если вас просят сделать изменения, вы можете коммитить их в ту же самую ветку, 
+        не нужно закрывать текущий pull request и открывать новый.</i></p>
+    </section>
+
+    <section>
+      <h3>Контакты</h3>
+
+      <p>Столкнувшись с затруднениями, не стесняйтесь открыть <b>issue</b>, написать в
+      <a href="https://github.com/AlexandrAnatoliev/project-euler-blog/discussions/14"><b>Discussions</b></a>
+      или мне на почту <b>per-1986@list.ru</b>.</p>
+    </section>
+
     <section>
       <aside class="article-preview">
         <h4>Навигация по статьям</h4>
