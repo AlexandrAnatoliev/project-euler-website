@@ -3,3 +3,4 @@ https://project-euler.ru/vydelenie-css-v-otdelnyj-repozitorij.html
 https://project-euler.ru/ustanovka-xampp-na-server.html
 https://project-euler.ru/prostoj-sajt-na-html.html
 https://project-euler.ru/ustanovka-ssl-sertifikata-na-sajt.html
+https://project-euler.ru/project-euler-1-php.php
