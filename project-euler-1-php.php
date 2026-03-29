@@ -8,6 +8,7 @@
     <meta name="description"
           content="Проект Эйлера 1 задача (числа, кратные 3 или 5) прозволяет отработать конструкции языка PHP"> 
   </head>
+
   <body>
     <header>
       <div class="favicon">
@@ -90,13 +91,44 @@
     </section>
 
     <section>
+      <h3>Описание алгоритма работы программы</h3>
+
+<pre class="vimcode" id='vimCodeElement'>
+<span id="L1" class="LineNr">1 </span><span class="Special">&lt;?php</span>
+<span id="L2" class="LineNr">2 </span><span class="Statement">$</span><span class="Identifier">answer</span> <span class="Statement">=</span> <span class="Constant">0</span>;
+<span id="L3" class="LineNr">3 </span><span class="Statement">for</span> <span class="Special">(</span><span class="Statement">$</span><span class="Identifier">num</span> <span class="Statement">=</span> <span class="Constant">1</span>; <span class="Statement">$</span><span class="Identifier">num</span> <span class="Statement">&lt;</span> <span class="Constant">1000</span>; <span class="Statement">$</span><span class="Identifier">num</span><span class="Statement">++</span><span class="Special">)</span> <span class="Special">{</span>
+<span id="L4" class="LineNr">4 </span>    <span class="Statement">if</span> <span class="Special">(</span><span class="Statement">$</span><span class="Identifier">num</span> <span class="Statement">%</span> <span class="Constant">3</span> <span class="Statement">==</span> <span class="Constant">0</span> <span class="Statement">||</span> <span class="Statement">$</span><span class="Identifier">num</span> <span class="Statement">%</span> <span class="Constant">5</span> <span class="Statement">==</span> <span class="Constant">0</span><span class="Special">)</span> <span class="Special">{</span>
+<span id="L5" class="LineNr">5 </span>        <span class="Statement">$</span><span class="Identifier">answer</span> <span class="Statement">+=</span> <span class="Statement">$</span><span class="Identifier">num</span>;
+<span id="L6" class="LineNr">6 </span>    <span class="Special">}</span>
+<span id="L7" class="LineNr">7 </span><span class="Special">}</span>
+<span id="L8" class="LineNr">8 </span><span class="PreProc">echo</span> <span class="Constant">'Answer = '</span> <span class="Statement">.</span> <span class="Statement">$</span><span class="Identifier">answer</span>;
+<span id="L9" class="LineNr">9 </span><span class="Special">?&gt;</span>
+</pre>
+
+      <p>Алгоритм решения основан на простом правиле:
+      если число делится нацело, то остаток от его
+      деления равен нулю.</p>
+
+      <div class="vimcode" id='vimCodeElement'>
+        <span id="L4" class="LineNr">4 </span><span class="Statement">if</span> <span class="Special">(</span><span class="Statement">$</span><span class="Identifier">num</span> <span class="Statement">%</span> <span class="Constant">3</span> <span class="Statement">==</span> <span class="Constant">0</span> <span class="Statement">||</span> <span class="Statement">$</span><span class="Identifier">num</span> <span class="Statement">%</span> <span class="Constant">5</span> <span class="Statement">==</span> <span class="Constant">0</span><span class="Special">)</span> <span class="Special">{</span>
+      </div>
+
+      <p>
+      <ul>
+        <li>В цикле <b>for</b> перебираются натуральные числа <b>$num</b> от одного до тысячи.</li>
+        <li>Каждое из них проверяется на соответствие условиям задачи.</li>
+        <li>Числа, удовлетворяющие условиям задачи, суммируются в переменную <b>$answer</b>.</li>
+      </ul>
+      </p>
+    </section>
+
+    <section>
       <aside class="article-preview">
         <h4>Навигация по статьям</h4>
         <ul>
-          <li><a href="vydelenie-css-v-otdelnyj-repozitorij.html"><b>Выделение CSS-настроек в отдельный репозиторий</b></a></li>
-          <li><a href="ustanovka-xampp-na-server.html"><b>Установка XAMPP на сервер</b></a></li>
-          <li><b>Простой сайт на HTML</b></li>
+          <li><a href="prostoj-sajt-na-html.html"><b>Простой сайт на HTML</b></a></li>
           <li><a href="ustanovka-ssl-sertifikata-na-sajt.html"><b>Установка SSL-сертификата на сайт</b></a></li>
+          <li><b>Проект Эйлер 1 задача на PHP</b></li>
         </ul>
       </aside>
 
