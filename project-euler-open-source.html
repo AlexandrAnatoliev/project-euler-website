@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="src/styles/main.css">
+
+    <title>Project Euler Blog: Project Euler Open Source</title>
+    <meta name="description"
+          content="Project Euler Open Source помогает изучить и 
+          попрактиковать конструкции различных языков программирования"> 
+  </head>
+
+  <body>
+    <header>
+      <div class="favicon">
+        <a href="/"><img src="favicon.ico" alt="Проект Эйлера блог"
+                                           class="favicon"></a>
+      </div>
+      <div class="github">
+        <a href="https://github.com/AlexandrAnatoliev"><img
+           src="images/logo/github.svg" alt="Ссылка на github"
+                                        class="github"></a>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html"><b>Project Euler Blog</b></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h1 id="top">Project Euler Open Source</h1>
+
+      <p><a href="https://github.com/AlexandrAnatoliev/project-euler"><b>Project Euler</b></a>
+      - это опенсорс проект, который помогает изучить и по-практиковать 
+      конструкции различных языков программирования.</p>
+
+      <p>Этот репозиторий предоставляет уникальную возможность:
+      <ul>
+        <li>Попрактиковаться в решении задач Project Euler</li>
+        <li>Поучаствовать в реальном open-source проекте</li>
+        <li>Создать свой первый пул-реквест</li>
+      </ul>
+      </p>
+    </section>
+
+    <section>
+      <h3>Инструкции по Установке</h3>
+
+      <p>1. Сделайте "форк" этого репозитория нажатием кнопки "Fork" в правом верхнем 
+      углу страницы.  Это создаст копию репозитория на вашем GitHub аккаунте.</p>
+
+      <figure>
+        <img alt="Кнопка Fork"
+             src="images/fork-button.png" class="large">
+      </figure>
+
+      <p>2. Клонируйте ваш "форкнутый" репозиторий нажатием кнопки "Code":</p>
+
+      <figure>
+        <img alt="Кнопка Code"
+             src="images/code-button.png" class="large">
+      </figure>
+
+      <p>Откроется маленькое окно:</p>
+
+      <figure>
+        <img alt="Clone window"
+             src="images/clone-window.png" class="large">
+      </figure>
+
+      <p>Скопируйте из него URL и выполните на своем компьютере команду:</p>
+
+      <div class="vimcode">
+        git clone https://github.com/&lt;your-username&gt;/project-euler.git
+      </div>
+
+      <p>3. Перейдите в папку с проектом:</p>
+
+      <div class="vimcode">
+        cd project-euler
+      </div>
+
+      <p>4. Добавьте ссылку на оригинальный репозиторий для будущих обновлений:</p>
+
+      <div class="vimcode">
+        git remote add upstream https://github.com/AlexandrAnatoliev/project-euler.git
+      </div>
+
+      <p><i>Примечание: здесь должен быть URL оригинального репозитория, а не "форкнутого" Вами, так что
+        username в нем должно быть <b>AlexandrAnatoliev</b>, а не ваш собственный username.</i></p>
+
+      <p>5. Проверьте ремоуты для своего репозитория:</p>
+
+      <div class="vimcode">
+        git remote -v
+      </div>
+
+      <p>Вы должны увидеть origin (создается автоматически при клонировании) и upstream ремоуты:</p>
+
+<pre class="vimcode">
+origin  https://github.com/&lt;your-username&gt;/project-euler.git (fetch)
+origin  https://github.com/&lt;your-username&gt;/project-euler.git (push)
+upstream        https://github.com/AlexandrAnatoliev/project-euler.git (fetch)
+upstream        https://github.com/AlexandrAnatoliev/project-euler.git (push)
+</pre>
+
+      <p>6. Выполните pull из upstream репозитория в вашу master ветку, 
+      чтобы синхронизировать ее с основным проектом:</p>
+
+      <div class="vimcode">
+        git pull upstream master
+      </div>
+
+      <p>7. Создайте новую ветку командой:</p>
+
+      <div class="vimcode">
+        git switch -c fix-issue-&lt;issue number&gt;
+      </div>
+
+      <p>или</p>
+
+      <div class="vimcode">
+        git switch -c &lt;your-username&gt;-&lt;problem-number&gt;
+      </div>
+
+      <p>Сейчас вы готовы начать работать с issue!<br>
+      Помните, каждый раз сначала делать pull из upstream репозитория, чтобы держать содержимое 
+      вашего локального репозитория в соответствии с главным проектом.</p>
+
+      <p><i>Примечание: Рекомендую всегда создавать новую ветвь для каждого issue, который вы выполняете!
+        Иначе pull request будут слишком большими и возможно возникнут конфликты слияния.</i></p>
+    </section>
+
+    <section>
+      <h3>Задачи</h3>
+
+      <p>Проект Эйлер содержит более 800 различных задач различной трудности. Вы можете выбрать любую 
+      задачу, которую вы хотите. Вы можете также выбрать и решить несколько задач. Только не забывайте
+      создавать новую ветвь для каждой из них.</p>
+
+      <p>Сначала, выберите задачу, которую вы хотите решать и откройте ее директорию:</p>
+<pre class="vimcode">
+  project-euler 
+  ├── Problem1/
+  │   └── README.md
+  ├── Problem2/
+  │   └── README.md
+  ├── Problem3/
+  │   └── README.md
+  └── README.md
+</pre>
+
+      <p>Перейдите в README файл выбранной задачи, чтобы получить информацию об ее сути.</p>
+
+      <p>Создайте директорию для вашего решения в формате:</p>
+      <div class="vimcode">
+        &lt;Your github nickname&gt;-&lt;your language&gt;/
+      </div>
+
+      <p>Например:</p>
+<pre class="vimcode">
+  project-euler 
+  ├── Problem1/
+  │   ├── User1-cpp/
+  │   ├── Username2-php/
+  │   ├── IvanIvanov-java/
+  │   │     ^
+  │   │     └── Директория для вашего решения
+  │   └── README.md
+  ├── Problem2/
+  │   ├── User1-golang/
+  │   └── README.md
+  └── README.md
+</pre>
+
+      <p>После этого вы готовы решать задачу.</p>
+
+      <p>Добавьте файлы с исходным кодом в вашу директорию (наличие README приветствуется).</p>
+
+      <p><i>Примечание: Избегайте лишних файлов (бинарные файлы или метаданные IDE) 
+        и проверьте что ваша программа работает корректно.</i></p>
+
+      <p>Все корректные решения будут добавлены после ревью.</p>
+
+      <p><i>Примечание: вам не нужно спрашивать разрешения начать решать задачу, предложенную в issue,
+        т.к. в этом проекте все issue открыты для новых контрибьютеров. Можно сразу же начинать работать
+        с issue прямо сейчас! Однако помните, что на большинстве проектов вам необходимо спрашивать
+        разрешение прежде чем начать работать с issue.  Это необходимо чтобы несколько человек не начали
+        работать над одним и тем же issue одновременно, и соответственно потратили свое время.</i></p>
+    </section>
+
+    <section>
+      <h3>Отправка ваших изменений</h3>
+
+      <p>После того как вы решили задачу, вы готовы отправить изменения.</p> 
+
+      <p>1. Добавьте ваши изменения в отслеживание:</p>
+
+      <div class="vimcode">
+        git add файлы-которые-вы-изменили
+      </div>
+
+      <p>2. Сделайте коммит:</p>
+
+      <div class="vimcode">
+        git commit -m "Add solution for Problem 1 in Python"
+      </div>
+
+      <p>3. Отправить изменения в ваш "форкнутый" репозиторий:</p>
+
+      <div class="vimcode">
+        git push origin fix-issue-&lt;issue number&gt;
+      </div>
+
+      <p>или</p>
+
+      <div class="vimcode">
+        git push origin &lt;your-username&gt;-&lt;problem number&gt;
+      </div>
+
+      <p>После того как вы отправили ваши изменения на GitHub, вы готовы создать pull request.</p>
+      <ul>
+        <li>Перейдите на ваш "форк" репозитория на GitHub.</li>
+
+        <li>Вы увидите надпись "fix-issue had recent pushes" (или как ваша ветка 
+          называется) и кнопку "Compare & pull request" рядом с ней.</li>
+
+        <figure>
+          <img alt="Compare & pull request button"
+               src="images/compare-and-pull-request.png" class="large">
+        </figure>
+
+        <li>Нажмите кнопку "Compare & pull request" и перейдете на страницу 
+          pull request оригинального репозитория проекта project-euler.</li>
+
+        <figure>
+          <img alt="Compare & pull request button"
+               src="images/compare-and-pull-request-button.png" class="large">
+        </figure>
+
+        <li>Заполните поля title и description подробностям о задаче и вашем ее решении. 
+          Вы можете также добавить иную информацию, такую как скриншоты, если хотите.</li>
+
+        <figure>
+          <img alt="Title and description boxes"
+               src="images/title-and-description-boxes.png" class="large">
+        </figure>
+
+        <li>В конце нажмите кнопку "Create pull request" чтобы закончить создание pull request.</li>
+
+        <figure>
+          <img alt="Create pull request button"
+               src="images/create-pull-request-button.png" class="large">
+        </figure>
+      </ul>
+
+      <p>Поздравляю, Вы сделали свой первый вклад в open source на GitHub!</p>
+
+      <p>Можете расслабиться и подождать пока не сделают ревью вашего кода. Если все хорошо, ваш pull request
+      вольют в основную ветку. Если нет, вам будет предложено внести изменения в ваш код.</p>
+
+      <p>Помните, что нужно подождать ревью вашего pull request, не закрывайте его сами.
+      Если вас просят сделать изменения, вы можете коммититить их в ту же самую ветвь, не нужно
+      закрывать текущий pull request и открывать новый.</p>
+    </section>
+
+    <section>
+      <h3>Контакты</h3>
+
+      <p>Столкнувшись с затруднениями, не стесняйтесь открыть issue, написать в 
+      <a href="https://github.com/AlexandrAnatoliev/project-euler/discussions/23"><b>Discussions</b></a>
+      или мне на почту per-1986@list.ru.</p>
+    </section>
+
+    <section>
+      <aside class="article-preview">
+        <h4>Навигация по статьям</h4>
+        <ul>
+          <li><a href="ustanovka-ssl-sertifikata-na-sajt.html"><b>Установка SSL-сертификата на сайт</b></a></li>
+          <li><a href="project-euler-1-php.php"><b>Проект Эйлер 1 задача на PHP</b></a></li>
+          <li><b>Project Euler Open Source</b></li>
+        </ul>
+      </aside>
+
+      <footer>
+        <ul>
+          <li><a href="#top"><b>Наверх</b></a></li>
+        </ul>
+      </footer>
+    </section>
+  </body>
+</html>
