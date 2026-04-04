@@ -127,7 +127,7 @@
 
       <p>Вы можете предложить свой вариант решения задачи и прислать в виде pull request.</p>
 
-      <aside class="article-preview">
+      <aside class="article-preview" aria-label="article 6">
         <h4>Project-Euler Open Source</h4>
         <p><b>Project-Euler</b> - это опенсорс проект, который помогает изучить 
         и попрактиковать конструкции различных языков программирования...
@@ -138,7 +138,7 @@
       какие-либо изменения в верстке этого сайта, вы всегда можете сделать pull request
       в этот проект.</p>
 
-      <aside class="article-preview">
+      <aside class="article-preview" aria-label="article 3">
         <h4>Простой сайт на HTML</h4>
         <p>Чтобы сделать сайт доступным из любой точки мира, самым простым вариантом 
         будет запустить его HTML-страницу на VPS-сервере с XAMPP. 
@@ -147,7 +147,7 @@
       </aside>
 
       <p>Если у вас есть идеи по CSS-настройкам этого сайта, тогда прочитайте эту статью.</p>
-      <aside class="article-preview">
+      <aside class="article-preview" aria-label="article 1">
         <h4>Выделение CSS-настроек в отдельный репозиторий</h4>
         <p>Project-Euler-CSS - это CSS-настройки для моего блога Project-Euler-Blog.
         Выделение CSS-настроек в отдельный репозиторий позволяет
@@ -158,7 +158,7 @@
     </section>
 
     <section>
-      <aside class="article-preview">
+      <aside class="article-preview" aria-label="nav menu">
         <h4>Навигация по статьям</h4>
         <ul>
           <li><a href="prostoj-sajt-na-html.html"><b>Простой сайт на HTML</b></a></li>
