@@ -50,6 +50,48 @@
     </section>
 
     <section>
+      <article class="calculator">
+        <h3>Онлайн-калькулятор: "Поиск ближайшего числа Фибоначчи"</h3>
+
+        <form method="post">
+          <label for="max_fib">Введите максимальное число:</label>
+          <input type="number" step="any" id="max_fib" name="max_fib" required><br>
+          <br>
+          <input type="submit" value="Найти">
+        </form>
+
+        <?php
+            // Получаем введенные значения из запроса
+            $max_fib_str = $_POST['max_fib'] ?? null;
+
+            // Проверяем, что параметры не null и не пустые
+            if ($max_fib_str !== null && $max_fib_str !== '' && is_numeric($max_fib_str)) {
+                try {
+                    $first_fib  = 1;
+                    $second_fib = 2;
+
+                    // Преобразуем строки в числа
+                    $max_fib = (float)$max_fib_str;
+
+                    while ($second_fib <= $max_fib) {
+                        $next_fib   = $first_fib + $second_fib;
+                        $first_fib  = $second_fib;
+                        $second_fib = $next_fib;
+                    }
+                    echo '<p>Ближайшее число Фибоначчи, меньшее ' . $max_fib . ' = ' . $first_fib . '</p>';
+                } catch (Exception $e) {
+                    // Обработка ошибки ввода
+                    echo '<p style="color: red;">Ошибка: Пожалуйста, введите корректные числовые значения.</p>';
+                }
+            } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                // Если была отправлена форма, но данные некорректны
+                echo '<p style="color: red;">Ошибка: Пожалуйста, введите корректные числовые значения.</p>';
+            }
+        ?>
+      </article>
+    </section>
+
+    <section>
       <h3>Описание алгоритма работы программы</h3>
 
 <pre class="vimcode">
