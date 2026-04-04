@@ -93,24 +93,24 @@
     <section>
       <h3>Описание алгоритма работы программы</h3>
 
-<pre class="vimcode" id='vimCodeElement'>
-<span id="L1" class="LineNr">1 </span><span class="Special">&lt;?php</span>
-<span id="L2" class="LineNr">2 </span><span class="Statement">$</span><span class="Identifier">answer</span> <span class="Statement">=</span> <span class="Constant">0</span>;
-<span id="L3" class="LineNr">3 </span><span class="Statement">for</span> <span class="Special">(</span><span class="Statement">$</span><span class="Identifier">num</span> <span class="Statement">=</span> <span class="Constant">1</span>; <span class="Statement">$</span><span class="Identifier">num</span> <span class="Statement">&lt;</span> <span class="Constant">1000</span>; <span class="Statement">$</span><span class="Identifier">num</span><span class="Statement">++</span><span class="Special">)</span> <span class="Special">{</span>
-<span id="L4" class="LineNr">4 </span>    <span class="Statement">if</span> <span class="Special">(</span><span class="Statement">$</span><span class="Identifier">num</span> <span class="Statement">%</span> <span class="Constant">3</span> <span class="Statement">==</span> <span class="Constant">0</span> <span class="Statement">||</span> <span class="Statement">$</span><span class="Identifier">num</span> <span class="Statement">%</span> <span class="Constant">5</span> <span class="Statement">==</span> <span class="Constant">0</span><span class="Special">)</span> <span class="Special">{</span>
-<span id="L5" class="LineNr">5 </span>        <span class="Statement">$</span><span class="Identifier">answer</span> <span class="Statement">+=</span> <span class="Statement">$</span><span class="Identifier">num</span>;
-<span id="L6" class="LineNr">6 </span>    <span class="Special">}</span>
-<span id="L7" class="LineNr">7 </span><span class="Special">}</span>
-<span id="L8" class="LineNr">8 </span><span class="PreProc">echo</span> <span class="Constant">'Answer = '</span> <span class="Statement">.</span> <span class="Statement">$</span><span class="Identifier">answer</span>;
-<span id="L9" class="LineNr">9 </span><span class="Special">?&gt;</span>
+<pre class="vimcode">
+<span class="LineNr">1 </span><span class="Special">&lt;?php</span>
+<span class="LineNr">2 </span><span class="Statement">$</span><span class="Identifier">answer</span> <span class="Statement">=</span> <span class="Constant">0</span>;
+<span class="LineNr">3 </span><span class="Statement">for</span> <span class="Special">(</span><span class="Statement">$</span><span class="Identifier">num</span> <span class="Statement">=</span> <span class="Constant">1</span>; <span class="Statement">$</span><span class="Identifier">num</span> <span class="Statement">&lt;</span> <span class="Constant">1000</span>; <span class="Statement">$</span><span class="Identifier">num</span><span class="Statement">++</span><span class="Special">)</span> <span class="Special">{</span>
+<span class="LineNr">4 </span>    <span class="Statement">if</span> <span class="Special">(</span><span class="Statement">$</span><span class="Identifier">num</span> <span class="Statement">%</span> <span class="Constant">3</span> <span class="Statement">==</span> <span class="Constant">0</span> <span class="Statement">||</span> <span class="Statement">$</span><span class="Identifier">num</span> <span class="Statement">%</span> <span class="Constant">5</span> <span class="Statement">==</span> <span class="Constant">0</span><span class="Special">)</span> <span class="Special">{</span>
+<span class="LineNr">5 </span>        <span class="Statement">$</span><span class="Identifier">answer</span> <span class="Statement">+=</span> <span class="Statement">$</span><span class="Identifier">num</span>;
+<span class="LineNr">6 </span>    <span class="Special">}</span>
+<span class="LineNr">7 </span><span class="Special">}</span>
+<span class="LineNr">8 </span><span class="PreProc">echo</span> <span class="Constant">'Answer = '</span> <span class="Statement">.</span> <span class="Statement">$</span><span class="Identifier">answer</span>;
+<span class="LineNr">9 </span><span class="Special">?&gt;</span>
 </pre>
 
       <p>Алгоритм решения основан на простом правиле:
       если число делится нацело, то остаток от его
       деления равен нулю.</p>
 
-      <div class="vimcode" id='vimCodeElement'>
-        <span id="L4" class="LineNr">4 </span><span class="Statement">if</span> <span class="Special">(</span><span class="Statement">$</span><span class="Identifier">num</span> <span class="Statement">%</span> <span class="Constant">3</span> <span class="Statement">==</span> <span class="Constant">0</span> <span class="Statement">||</span> <span class="Statement">$</span><span class="Identifier">num</span> <span class="Statement">%</span> <span class="Constant">5</span> <span class="Statement">==</span> <span class="Constant">0</span><span class="Special">)</span> <span class="Special">{</span>
+      <div class="vimcode">
+        <span class="LineNr">4 </span><span class="Statement">if</span> <span class="Special">(</span><span class="Statement">$</span><span class="Identifier">num</span> <span class="Statement">%</span> <span class="Constant">3</span> <span class="Statement">==</span> <span class="Constant">0</span> <span class="Statement">||</span> <span class="Statement">$</span><span class="Identifier">num</span> <span class="Statement">%</span> <span class="Constant">5</span> <span class="Statement">==</span> <span class="Constant">0</span><span class="Special">)</span> <span class="Special">{</span>
       </div>
 
       <p>
