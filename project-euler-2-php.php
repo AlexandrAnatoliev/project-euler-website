@@ -6,8 +6,8 @@
 
     <title>Project Euler Blog: Проект Эйлер 2 задача на PHP </title>
     <meta name="description"
-          content="Проект Эйлера 2 задача (четные числа Фибоначчи), 
-            реализация на PHP с онлайн-калькулятором для проверки вычислений"> 
+          content="Проект Эйлера 2 задача (четные числа Фибоначчи),
+            реализация на PHP с онлайн-калькулятором для проверки вычислений">
   </head>
 
   <body>
@@ -39,7 +39,7 @@
     <section>
       <h3>Четные числа Фибоначчи</h3>
       <p><i>
-        Каждый следующий элемент ряда Фибоначчи получается при сложении двух предыдущих. 
+        Каждый следующий элемент ряда Фибоначчи получается при сложении двух предыдущих.
         Начиная с 1 и 2, первые 11 элементов будут:
       </i></p>
       <p>
@@ -127,7 +127,7 @@
         <span class="LineNr">7  </span>    <span class="Statement">if</span> <span class="Special">(</span><span class="Statement">$</span><span class="Identifier">second_fib</span> <span class="Statement">%</span> <span class="Constant">2</span> <span class="Statement">==</span> <span class="Constant">0</span> <span class="Special">)</span> <span class="Special">{</span>
       </div>
 
-      <p>Ну и главное, не нужно вычислять каждый элемент ряда каждый раз заново.<br> 
+      <p>Ну и главное, не нужно вычислять каждый элемент ряда каждый раз заново.<br>
       Поэтому как только будет получено число Фибоначчи, следующее за первыми двумя:</p>
       <div class="vimcode">
         <span class="LineNr">10 </span><span class="Statement">$</span><span class="Identifier">next_fib</span>   <span class="Statement">=</span> <span class="Statement">$</span><span class="Identifier">first_fib</span> <span class="Statement">+</span> <span class="Statement">$</span><span class="Identifier">second_fib</span>;
@@ -144,7 +144,7 @@
       </div>
 
       <p>
-        ...второе – третьего (суммы первых двух).<br /> Такой цикл продолжается снова 
+        ...второе – третьего (суммы первых двух).<br /> Такой цикл продолжается снова
         и снова до тех пор, пока в итоге не дойдет до искомых <b>4 000 000</b>.</p>
 
     <section>
@@ -154,7 +154,7 @@
 
       <aside class="article-preview" aria-label="article 6">
         <h4>Project-Euler Open Source</h4>
-        <p><b>Project-Euler</b> - это опенсорс проект, который помогает изучить 
+        <p><b>Project-Euler</b> - это опенсорс проект, который помогает изучить
         и попрактиковать конструкции различных языков программирования...
         <a href="project-euler-open-source.html"><b>читать</b></a> </p>
       </aside>
@@ -165,8 +165,8 @@
 
       <aside class="article-preview" aria-label="article 3">
         <h4>Простой сайт на HTML</h4>
-        <p>Чтобы сделать сайт доступным из любой точки мира, самым простым вариантом 
-        будет запустить его HTML-страницу на VPS-сервере с XAMPP. 
+        <p>Чтобы сделать сайт доступным из любой точки мира, самым простым вариантом
+        будет запустить его HTML-страницу на VPS-сервере с XAMPP.
         Весь процесс можно разбить на несколько простых шагов...
         <a href="prostoj-sajt-na-html.html"><b>читать</b></a> </p>
       </aside>
