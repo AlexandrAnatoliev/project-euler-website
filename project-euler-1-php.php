@@ -165,6 +165,7 @@
           <li><a href="ustanovka-ssl-sertifikata-na-sajt.html"><b>Установка SSL-сертификата на сайт</b></a></li>
           <li><b>Проект Эйлер 1 задача на PHP</b></li>
           <li><a href="project-euler-open-source.html"><b>Project Euler Open Source</b></a></li>
+          <li><a href="project-euler-2-php.php"><b>Проект Эйлер 2 задача на PHP</b></a></li>
         </ul>
       </aside>
 
