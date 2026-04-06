@@ -24,7 +24,8 @@
 
       <nav>
         <ul>
-          <li><a href="index.html"><b>Project Euler Blog</b></a></li>
+          <li><a href="index.html"><b>Blog</b></a></li>
+          <li><a href="project-euler-problems.html"><b>Problems</b></a></li>
         </ul>
       </nav>
     </header>
