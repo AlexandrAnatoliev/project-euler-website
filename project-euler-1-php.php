@@ -152,12 +152,7 @@
           <li><a href="project-euler-2-php.php"><b>Проект Эйлер 2 задача на PHP</b></a></li>
         </ul>
       </aside>
-
-      <footer>
-        <ul>
-          <li><a href="#top"><b>Наверх</b></a></li>
-        </ul>
-      </footer>
     </section>
+    <?php include_once 'includes/footer.php'; ?>
   </body>
 </html>
