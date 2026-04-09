@@ -24,9 +24,9 @@
 
       <nav>
         <ul>
-          <li><a href="projects.html"><b>Projects</b></a></li>
-          <li><a href="index.html"><b>Blog</b></a></li>
-          <li><a href="project-euler-problems.html"><b>Problems</b></a></li>
+          <li><a href="projects.php"><b>Projects</b></a></li>
+          <li><a href="index.php"><b>Blog</b></a></li>
+          <li><a href="project-euler-problems.php"><b>Problems</b></a></li>
         </ul>
       </nav>
     </header>
@@ -280,7 +280,7 @@ upstream        https://github.com/AlexandrAnatoliev/project-euler.git (push)
       <aside class="article-preview">
         <h4>Навигация по статьям</h4>
         <ul>
-          <li><a href="ustanovka-ssl-sertifikata-na-sajt.html"><b>Установка SSL-сертификата на сайт</b></a></li>
+          <li><a href="ustanovka-ssl-sertifikata-na-sajt.php"><b>Установка SSL-сертификата на сайт</b></a></li>
           <li><a href="project-euler-1-php.php"><b>Проект Эйлер 1 задача на PHP</b></a></li>
           <li><b>Project Euler Open Source</b></li>
           <li><a href="project-euler-2-php.php"><b>Проект Эйлер 2 задача на PHP</b></a></li>

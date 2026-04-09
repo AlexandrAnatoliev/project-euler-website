@@ -22,9 +22,9 @@
 
       <nav>
         <ul>
-          <li><a href="projects.html"><b>Projects</b></a></li>
-          <li><a href="index.html"><b>Blog</b></a></li>
-          <li><a href="project-euler-problems.html"><b>Problems</b></a></li>
+          <li><a href="projects.php"><b>Projects</b></a></li>
+          <li><a href="index.php"><b>Blog</b></a></li>
+          <li><a href="project-euler-problems.php"><b>Problems</b></a></li>
         </ul>
       </nav>
     </header>
@@ -48,12 +48,12 @@
       <p>Что нужно сделать:
         <ul>
           <li>Подключиться к VPS по SSH.</li>
-          <li>Поместить HTML-файл (например, <b>index.html</b>) в эту директорию.</li>
+          <li>Поместить HTML-файл (например, <b>index.php</b>) в эту директорию.</li>
           <li>Если есть целая папка с сайтом (например, <b>мой-сайт</b>), можно загрузить её целиком, 
             и путь к файлам будет таким:</li>
         </ul>
         <div class="vimcode">
-          /opt/lampp/htdocs/мой-сайт/index.html
+          /opt/lampp/htdocs/мой-сайт/index.php
         </div>
       </p>
     </section>
@@ -294,10 +294,10 @@ upstream        https://github.com/AlexandrAnatoliev/project-euler-blog.git (pus
       <aside class="article-preview">
         <h4>Навигация по статьям</h4>
         <ul>
-          <li><a href="vydelenie-css-v-otdelnyj-repozitorij.html"><b>Выделение CSS-настроек в отдельный репозиторий</b></a></li>
-          <li><a href="ustanovka-xampp-na-server.html"><b>Установка XAMPP на сервер</b></a></li>
+          <li><a href="vydelenie-css-v-otdelnyj-repozitorij.php"><b>Выделение CSS-настроек в отдельный репозиторий</b></a></li>
+          <li><a href="ustanovka-xampp-na-server.php"><b>Установка XAMPP на сервер</b></a></li>
           <li><b>Простой сайт на HTML</b></li>
-          <li><a href="ustanovka-ssl-sertifikata-na-sajt.html"><b>Установка SSL-сертификата на сайт</b></a></li>
+          <li><a href="ustanovka-ssl-sertifikata-na-sajt.php"><b>Установка SSL-сертификата на сайт</b></a></li>
           <li><a href="project-euler-1-php.php"><b>Проект Эйлер 1 задача на PHP</b></a></li>
         </ul>
       </aside>

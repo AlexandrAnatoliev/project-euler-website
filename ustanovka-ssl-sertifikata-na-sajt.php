@@ -22,9 +22,9 @@
 
       <nav>
         <ul>
-          <li><a href="projects.html"><b>Projects</b></a></li>
-          <li><a href="index.html"><b>Blog</b></a></li>
-          <li><a href="project-euler-problems.html"><b>Problems</b></a></li>
+          <li><a href="projects.php"><b>Projects</b></a></li>
+          <li><a href="index.php"><b>Blog</b></a></li>
+          <li><a href="project-euler-problems.php"><b>Problems</b></a></li>
         </ul>
       </nav>
     </header>
@@ -156,11 +156,11 @@ chmod 600 /opt/lampp/etc/ssl.key/project-euler.ru.key
       <aside class="article-preview">
         <h4>Навигация по статьям</h4>
         <ul>
-          <li><a href="ustanovka-xampp-na-server.html"><b>Установка XAMPP на сервер</b></a></li>
-          <li><a href="prostoj-sajt-na-html.html"><b>Простой сайт на HTML</b></a></li>
+          <li><a href="ustanovka-xampp-na-server.php"><b>Установка XAMPP на сервер</b></a></li>
+          <li><a href="prostoj-sajt-na-html.php"><b>Простой сайт на HTML</b></a></li>
           <li><b>Установка SSL-сертификата на сайт</b></li>
           <li><a href="project-euler-1-php.php"><b>Проект Эйлер 1 задача на PHP</b></a></li>
-          <li><a href="project-euler-open-source.html"><b>Project Euler Open Source</b></a></li>
+          <li><a href="project-euler-open-source.php"><b>Project Euler Open Source</b></a></li>
         </ul>
       </aside>
 
