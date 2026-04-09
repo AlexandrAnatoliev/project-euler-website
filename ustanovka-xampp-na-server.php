@@ -87,12 +87,8 @@ sudo ./xampp-linux-x64-8.2.12-0-installer.run
           <li><a href="ustanovka-ssl-sertifikata-na-sajt.php"><b>Установка SSL-сертификата на сайт</b></a></li>
         </ul>
       </aside>
-
-      <footer>
-        <ul>
-          <li><a href="#top"><b>Наверх</b></a></li>
-        </ul>
-      </footer>
     </section>
+
+    <?php include_once 'includes/footer.php'; ?>
   </body>
 </html>

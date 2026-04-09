@@ -41,14 +41,9 @@
         и попрактиковать конструкции различных языков программирования...
         <a href="project-euler-open-source.php"><b>читать</b></a> </p>
       </aside>
-
-    <section>
-      <footer>
-        <ul>
-          <li><a href="#top"><b>Наверх</b></a></li>
-        </ul>
-      </footer>
     </section>
+
+    <?php include_once 'includes/footer.php'; ?>
   </body>
 </html>
 

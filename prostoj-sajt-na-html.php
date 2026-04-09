@@ -283,13 +283,9 @@ upstream        https://github.com/AlexandrAnatoliev/project-euler-blog.git (pus
           <li><a href="project-euler-1-php.php"><b>Проект Эйлер 1 задача на PHP</b></a></li>
         </ul>
       </aside>
-
-      <footer>
-        <ul>
-          <li><a href="#top"><b>Наверх</b></a></li>
-        </ul>
-      </footer>
     </section>
+
+    <?php include_once 'includes/footer.php'; ?>
   </body>
 </html>
 

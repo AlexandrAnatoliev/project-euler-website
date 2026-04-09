@@ -32,13 +32,7 @@
       </aside>
     </section>
 
-    <section>
-      <footer>
-        <ul>
-          <li><a href="#top"><b>Наверх</b></a></li>
-        </ul>
-      </footer>
-    </section>
+    <?php include_once 'includes/footer.php'; ?>
   </body>
 </html>
 
