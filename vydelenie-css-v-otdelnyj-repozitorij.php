@@ -41,7 +41,7 @@
 
       <h3>Подключение Git-подмодуля репозитория</h3>
 
-      <p>Чтобы подключить репозиторий <b>project-euler-css</b>, 
+      <p>Чтобы подключить репозиторий <b>project-euler-css</b>,
       как Git-подмодуль репозитория <b>project-euler-blog</b> нужно зайти в проект...</p>
 <pre class="vimcode">
   project-euler-blog/
@@ -63,7 +63,7 @@
   └── .gitmodules
 </pre>
 
-      <p>В HTML файл проекта (<b>index.html</b>) необходимо добавить ссылку 
+      <p>В HTML файл проекта (<b>index.html</b>) необходимо добавить ссылку
       на файл внутри подмодуля (<b>main.css</b>):</p>
       <div class="vimcode">
         &lt;link rel="stylesheet" href="src/styles/main.css"&gt;
@@ -73,7 +73,7 @@
     <section>
       <h3>Клонирование репозитория с Git-подмодулем</h3>
 
-      <p>При клонировании репозитория необходимо использовать флаг <b>--recursive</b>:</p> 
+      <p>При клонировании репозитория необходимо использовать флаг <b>--recursive</b>:</p>
       <div class="vimcode">
         git clone --recursive https://github.com/AlexandrAnatoliev/project-euler-blog.git
       </div>
@@ -87,8 +87,8 @@ ls src/styles/  # пусто или не существует
 
       <p>В этом случае нужно инициализировать и обновить подмодули:</p>
 <pre class="vimcode">
-git submodule init    
-git submodule update 
+git submodule init
+git submodule update
 </pre>
 
     </section>
@@ -122,8 +122,8 @@ git commit -m "Update css to latest version"
 
       <h3>Инструкции по Установке</h3>
 
-      <p> 1. Сделайте "форк" этого репозитория нажатием кнопки 
-      "Fork" в правом верхнем углу страницы.  Это создаст копию 
+      <p> 1. Сделайте "форк" этого репозитория нажатием кнопки
+      "Fork" в правом верхнем углу страницы.  Это создаст копию
       репозитория на Вашем GitHub аккаунте.</p>
 
       <p>2. Клонируйте Ваш "форкнутый" репозиторий нажатием кнопки "Code".<br>
@@ -142,7 +142,7 @@ git commit -m "Update css to latest version"
         git remote add upstream https://github.com/AlexandrAnatoliev/project-euler-css.git
       </div>
 
-      <p><i>Примечание: Здесь должен быть URL оригинального репозитория, а не "форкнутого" вами, 
+      <p><i>Примечание: Здесь должен быть URL оригинального репозитория, а не "форкнутого" вами,
         так что username в нем должно быть <b>AlexandrAnatoliev</b>, а не ваш собственный username.</i></p>
 
       <p>5. Проверьте ремоуты для своего репозитория:</p>
@@ -159,7 +159,7 @@ upstream        https://github.com/AlexandrAnatoliev/project-euler-css.git (fetc
 upstream        https://github.com/AlexandrAnatoliev/project-euler-css.git (push)
 </pre>
 
-      <p>6. Выполните pull из upstream репозитория в Вашу master ветку, 
+      <p>6. Выполните pull из upstream репозитория в Вашу master ветку,
       чтобы синхронизировать ее с основным проектом:</p>
       <div class="vimcode">
         git pull upstream master
@@ -170,9 +170,9 @@ upstream        https://github.com/AlexandrAnatoliev/project-euler-css.git (push
         git switch -c fix-issue
       </div>
 
-      <p>Сейчас вы готовы начать работать с issue.<br> 
+      <p>Сейчас вы готовы начать работать с issue.<br>
       Помните: каждый раз сначала делать pull из upstream репозитория, чтобы держать содержимое
-      вашего локального репозитория в соответствии с главным проектом.</p> 
+      вашего локального репозитория в соответствии с главным проектом.</p>
 
       <p><i>Примечание: Рекомендую всегда создавать новую ветку для каждого issue, который вы выполняете!
         Иначе pull request будут слишком большими и возможно возникнут конфликты слияния.</i></p>
@@ -181,7 +181,7 @@ upstream        https://github.com/AlexandrAnatoliev/project-euler-css.git (push
     <section>
       <h3>Отправка ваших изменений</h3>
 
-      <p>После того как вы решили проблему, вы готовы отправить изменения.</p> 
+      <p>После того как вы решили проблему, вы готовы отправить изменения.</p>
 
       <p>1. Добавьте ваши изменения в отслеживание:</p>
       <div class="vimcode">
@@ -198,21 +198,21 @@ upstream        https://github.com/AlexandrAnatoliev/project-euler-css.git (push
         git push origin fix-issue
       </div>
 
-      <p> После того как вы отправили Ваши изменения на 
+      <p> После того как вы отправили Ваши изменения на
         GitHub, вы готовы создать pull request.
         Перейдите на Ваш "форк" репозитория на GitHub.</p>
 
       <ul>
         <li>
-          Вы увидите надпись "fix-issue had recent pushes" (или как ваша ветка 
+          Вы увидите надпись "fix-issue had recent pushes" (или как ваша ветка
           называется) и кнопку "Compare & pull request" на ней.
         </li>
         <li>
-          Нажмите кнопку "Compare & pull request" и перейдете на страницу pull 
+          Нажмите кнопку "Compare & pull request" и перейдете на страницу pull
           request оригинального репозитория проекта project-euler-css.
         </li>
         <li>
-          Заполните поля title и description подробностями о задаче и Вашем ее решении. 
+          Заполните поля title и description подробностями о задаче и Вашем ее решении.
           Вы можете также добавить иную информацию, такую как скриншоты, если хотите.
         </li>
         <li>
@@ -223,11 +223,11 @@ upstream        https://github.com/AlexandrAnatoliev/project-euler-css.git (push
       <p>Поздравляю, вы сделали свой вклад в open source на GitHub!<br>
         Можете расслабиться и подождать пока не сделают
         ревью вашего кода. Если все хорошо, ваш pull request
-        вольют в основную ветку. Если нет, вам будет 
+        вольют в основную ветку. Если нет, вам будет
         предложено внести изменения в ваш код.</p>
 
-      <p><i>Примечание: Помните, что нужно подождать ревью Вашего pull request, не закрывайте его сами. 
-        Если Вас просят сделать изменения, вы можете коммитить их в ту же самую ветку, 
+      <p><i>Примечание: Помните, что нужно подождать ревью Вашего pull request, не закрывайте его сами.
+        Если Вас просят сделать изменения, вы можете коммитить их в ту же самую ветку,
         не нужно закрывать текущий pull request и открывать новый.</i></p>
     </section>
 
