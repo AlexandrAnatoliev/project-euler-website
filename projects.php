@@ -47,15 +47,15 @@
 
       <aside class="article-preview" aria-label="article 3">
         <h4>Project-Euler-Blog</h4>
-        <p>Простой сайт на HTML - сборник статей для моего блога.<br> 
-        Я использую его для более легкой верстки, т.к. HTML-файлы можно смотреть просто в браузере, 
+        <p>Простой сайт на HTML - сборник статей для моего блога.<br>
+        Я использую его для более легкой верстки, т.к. HTML-файлы можно смотреть просто в браузере,
         не добавляя в базу данных и не запуская XAMPP...
         <a href="prostoj-sajt-na-html.php"><b>читать</b></a> </p>
       </aside>
 
       <aside class="article-preview" aria-label="article 6">
         <h4>Project-Euler Open Source</h4>
-        <p><b>Project-Euler</b> - это опенсорс-проект, который помогает изучить 
+        <p><b>Project-Euler</b> - это опенсорс-проект, который помогает изучить
         и попрактиковать конструкции различных языков программирования...
         <a href="project-euler-open-source.php"><b>читать</b></a> </p>
       </aside>
