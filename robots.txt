@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /includes/
 
 Sitemap: https://project-euler.ru/sitemap.txt
