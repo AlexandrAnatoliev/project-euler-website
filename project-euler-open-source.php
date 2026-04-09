@@ -11,7 +11,7 @@
   </head>
 
   <body>
-    <?php include 'includes/header.php'; ?>
+    <?php include_once 'includes/header.php'; ?>
 
     <section>
       <h1 id="top">Project Euler Open Source</h1>

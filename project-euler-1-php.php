@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <?php include 'includes/header.php'; ?>
+    <?php include_once 'includes/header.php'; ?>
 
     <section>
       <h1 id="top">Проект Эйлер 1 задача на PHP</h1>

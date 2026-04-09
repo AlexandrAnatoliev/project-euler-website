@@ -9,7 +9,7 @@
           content="Мой блог в котором я решаю задачи проекта Эйлер">
   </head>
   <body>
-    <?php include 'includes/header.php'; ?>
+    <?php include_once 'includes/header.php'; ?>
 
     <section>
       <h1 id="top">Project Euler Blog</h1>

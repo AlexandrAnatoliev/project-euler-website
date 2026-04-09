@@ -9,7 +9,7 @@
           content="Устанавливаю Timeweb SSL-сертификат на сайт на XAMPP">
   </head>
   <body>
-    <?php include 'includes/header.php'; ?>
+    <?php include_once 'includes/header.php'; ?>
 
     <section>
       <h1 id="top">Установка SSL-сертификата на сайт</h1>

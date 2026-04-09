@@ -9,7 +9,7 @@
           content="устанавливаем XAMPP на удаленный сервер">
   </head>
   <body>
-    <?php include 'includes/header.php'; ?>
+    <?php include_once 'includes/header.php'; ?>
 
     <section>
       <h1 id="top">Установка XAMPP на сервер</h1>
