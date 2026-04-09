@@ -22,9 +22,9 @@
 
       <nav>
         <ul>
-          <li><a href="projects.html"><b>Projects</b></a></li>
-          <li><a href="index.html"><b>Blog</b></a></li>
-          <li><a href="project-euler-problems.html"><b>Problems</b></a></li>
+          <li><a href="projects.php"><b>Projects</b></a></li>
+          <li><a href="index.php"><b>Blog</b></a></li>
+          <li><a href="project-euler-problems.php"><b>Problems</b></a></li>
         </ul>
       </nav>
     </header>
@@ -244,8 +244,8 @@ upstream        https://github.com/AlexandrAnatoliev/project-euler-css.git (push
         <h4>Навигация по статьям</h4>
         <ul>
           <li><b>Выделение CSS-настроек в отдельный репозиторий</b></li>
-          <li><a href="ustanovka-xampp-na-server.html"><b>Установка XAMPP на сервер</b></a></li>
-          <li><a href="prostoj-sajt-na-html.html"><b>Простой сайт на HTML</b></a></li>
+          <li><a href="ustanovka-xampp-na-server.php"><b>Установка XAMPP на сервер</b></a></li>
+          <li><a href="prostoj-sajt-na-html.php"><b>Простой сайт на HTML</b></a></li>
         </ul>
       </aside>
 

@@ -1,10 +1,10 @@
 https://project-euler.ru/
-https://project-euler.ru/vydelenie-css-v-otdelnyj-repozitorij.html
-https://project-euler.ru/ustanovka-xampp-na-server.html
-https://project-euler.ru/prostoj-sajt-na-html.html
-https://project-euler.ru/ustanovka-ssl-sertifikata-na-sajt.html
+https://project-euler.ru/vydelenie-css-v-otdelnyj-repozitorij.php
+https://project-euler.ru/ustanovka-xampp-na-server.php
+https://project-euler.ru/prostoj-sajt-na-html.php
+https://project-euler.ru/ustanovka-ssl-sertifikata-na-sajt.php
 https://project-euler.ru/project-euler-1-php.php
-https://project-euler.ru/project-euler-open-source.html
+https://project-euler.ru/project-euler-open-source.php
 https://project-euler.ru/project-euler-2-php.php
-https://project-euler.ru/project-euler-problems.html
-https://project-euler.ru/projects.html
+https://project-euler.ru/project-euler-problems.php
+https://project-euler.ru/projects.php

@@ -22,9 +22,9 @@
 
       <nav>
         <ul>
-          <li><a href="projects.html"><b>Projects</b></a></li>
-          <li><a href="index.html"><b>Blog</b></a></li>
-          <li><a href="project-euler-problems.html"><b>Problems</b></a></li>
+          <li><a href="projects.php"><b>Projects</b></a></li>
+          <li><a href="index.php"><b>Blog</b></a></li>
+          <li><a href="project-euler-problems.php"><b>Problems</b></a></li>
         </ul>
       </nav>
     </header>
@@ -42,7 +42,7 @@
         Выделение CSS-настроек в отдельный репозиторий позволяет
         использовать их повторно в разных проектах и избавляет от необходимости
         вносить одни и те же изменения в каждый проект...
-        <a href="vydelenie-css-v-otdelnyj-repozitorij.html"><b>читать</b></a> </p>
+        <a href="vydelenie-css-v-otdelnyj-repozitorij.php"><b>читать</b></a> </p>
       </aside>
 
       <aside class="article-preview" aria-label="article 3">
@@ -50,14 +50,14 @@
         <p>Простой сайт на HTML - сборник статей для моего блога.<br> 
         Я использую его для более легкой верстки, т.к. HTML-файлы можно смотреть просто в браузере, 
         не добавляя в базу данных и не запуская XAMPP...
-        <a href="prostoj-sajt-na-html.html"><b>читать</b></a> </p>
+        <a href="prostoj-sajt-na-html.php"><b>читать</b></a> </p>
       </aside>
 
       <aside class="article-preview" aria-label="article 6">
         <h4>Project-Euler Open Source</h4>
         <p><b>Project-Euler</b> - это опенсорс-проект, который помогает изучить 
         и попрактиковать конструкции различных языков программирования...
-        <a href="project-euler-open-source.html"><b>читать</b></a> </p>
+        <a href="project-euler-open-source.php"><b>читать</b></a> </p>
       </aside>
 
     <section>

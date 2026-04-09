@@ -22,9 +22,9 @@
 
       <nav>
         <ul>
-          <li><a href="projects.html"><b>Projects</b></a></li>
-          <li><a href="index.html"><b>Blog</b></a></li>
-          <li><a href="project-euler-problems.html"><b>Problems</b></a></li>
+          <li><a href="projects.php"><b>Projects</b></a></li>
+          <li><a href="index.php"><b>Blog</b></a></li>
+          <li><a href="project-euler-problems.php"><b>Problems</b></a></li>
         </ul>
       </nav>
     </header>
@@ -99,10 +99,10 @@ sudo ./xampp-linux-x64-8.2.12-0-installer.run
       <aside class="article-preview">
         <h4>Навигация по статьям</h4>
         <ul>
-          <li><a href="vydelenie-css-v-otdelnyj-repozitorij.html"><b>Выделение CSS-настроек в отдельный репозиторий</b></a></li>
+          <li><a href="vydelenie-css-v-otdelnyj-repozitorij.php"><b>Выделение CSS-настроек в отдельный репозиторий</b></a></li>
           <li><b>Установка XAMPP на сервер</b></li>
-          <li><a href="prostoj-sajt-na-html.html"><b>Простой сайт на HTML</b></a></li>
-          <li><a href="ustanovka-ssl-sertifikata-na-sajt.html"><b>Установка SSL-сертификата на сайт</b></a></li>
+          <li><a href="prostoj-sajt-na-html.php"><b>Простой сайт на HTML</b></a></li>
+          <li><a href="ustanovka-ssl-sertifikata-na-sajt.php"><b>Установка SSL-сертификата на сайт</b></a></li>
         </ul>
       </aside>
 

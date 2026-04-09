@@ -22,9 +22,9 @@
 
       <nav>
         <ul>
-          <li><a href="projects.html"><b>Projects</b></a></li>
-          <li><a href="index.html"><b>Blog</b></a></li>
-          <li><a href="project-euler-problems.html"><b>Problems</b></a></li>
+          <li><a href="projects.php"><b>Projects</b></a></li>
+          <li><a href="index.php"><b>Blog</b></a></li>
+          <li><a href="project-euler-problems.php"><b>Problems</b></a></li>
         </ul>
       </nav>
     </header>
@@ -40,13 +40,13 @@
         <h4>Числа, кратные 3 или 5</h4>
         <p> Решая эту задачу, постарался не только отработать конструкции языка <b>PHP</b>, 
         но и сделал небольшой <b>онлайн-калькулятор</b>, позволяющий проверить ваши вычисления...
-        <a href="project-euler-1-php.html"><b>читать</b></a> </p>
+        <a href="project-euler-1-php.php"><b>читать</b></a> </p>
       </aside>
 
       <aside class="article-preview" aria-label="article 7">
         <h4>Четные числа Фибоначчи</h4>
         <p>Реализация на PHP с онлайн-калькулятором для проверки вычислений"...
-        <a href="project-euler-2-php.html"><b>читать</b></a> </p>
+        <a href="project-euler-2-php.php"><b>читать</b></a> </p>
       </aside>
     </section>
 

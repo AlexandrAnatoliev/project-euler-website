@@ -24,9 +24,9 @@
 
       <nav>
         <ul>
-          <li><a href="projects.html"><b>Projects</b></a></li>
-          <li><a href="index.html"><b>Blog</b></a></li>
-          <li><a href="project-euler-problems.html"><b>Problems</b></a></li>
+          <li><a href="projects.php"><b>Projects</b></a></li>
+          <li><a href="index.php"><b>Blog</b></a></li>
+          <li><a href="project-euler-problems.php"><b>Problems</b></a></li>
         </ul>
       </nav>
     </header>
@@ -158,7 +158,7 @@
         <h4>Project-Euler Open Source</h4>
         <p><b>Project-Euler</b> - это опенсорс проект, который помогает изучить
         и попрактиковать конструкции различных языков программирования...
-        <a href="project-euler-open-source.html"><b>читать</b></a> </p>
+        <a href="project-euler-open-source.php"><b>читать</b></a> </p>
       </aside>
 
       <p>В случае, если вы заметили какие то неточности в статье или хотите предложить
@@ -170,7 +170,7 @@
         <p>Чтобы сделать сайт доступным из любой точки мира, самым простым вариантом
         будет запустить его HTML-страницу на VPS-сервере с XAMPP.
         Весь процесс можно разбить на несколько простых шагов...
-        <a href="prostoj-sajt-na-html.html"><b>читать</b></a> </p>
+        <a href="prostoj-sajt-na-html.php"><b>читать</b></a> </p>
       </aside>
 
       <p>Если у вас есть идеи по CSS-настройкам этого сайта, тогда прочитайте эту статью.</p>
@@ -180,7 +180,7 @@
         Выделение CSS-настроек в отдельный репозиторий позволяет
         использовать их повторно в разных проектах и избавляет от необходимости
         вносить одни и те же изменения в каждый проект...
-        <a href="vydelenie-css-v-otdelnyj-repozitorij.html"><b>читать</b></a> </p>
+        <a href="vydelenie-css-v-otdelnyj-repozitorij.php"><b>читать</b></a> </p>
       </aside>
     </section>
 
@@ -189,7 +189,7 @@
         <h4>Навигация по статьям</h4>
         <ul>
           <li><a href="project-euler-1-php.php"><b>Проект Эйлер 1 задача на PHP</b></a></li>
-          <li><a href="project-euler-open-source.html"><b>Project Euler Open Source</b></a></li>
+          <li><a href="project-euler-open-source.php"><b>Project Euler Open Source</b></a></li>
           <li><b>Проект Эйлер 2 задача на PHP</b></li>
         </ul>
       </aside>
