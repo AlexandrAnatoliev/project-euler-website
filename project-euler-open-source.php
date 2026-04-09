@@ -6,8 +6,8 @@
 
     <title>Project Euler Blog: Project Euler Open Source</title>
     <meta name="description"
-          content="Project Euler Open Source помогает изучить и 
-          попрактиковать конструкции различных языков программирования"> 
+          content="Project Euler Open Source помогает изучить и
+          попрактиковать конструкции различных языков программирования">
   </head>
 
   <body>
@@ -35,7 +35,7 @@
       <h1 id="top">Project Euler Open Source</h1>
 
       <p><a href="https://github.com/AlexandrAnatoliev/project-euler"><b>Project Euler</b></a>
-      - это опенсорс проект, который помогает изучить и по-практиковать 
+      - это опенсорс проект, который помогает изучить и по-практиковать
       конструкции различных языков программирования.</p>
 
       <p>Этот репозиторий предоставляет уникальную возможность:
@@ -50,7 +50,7 @@
     <section>
       <h3>Инструкции по Установке</h3>
 
-      <p>1. Сделайте "форк" этого репозитория нажатием кнопки "Fork" в правом верхнем 
+      <p>1. Сделайте "форк" этого репозитория нажатием кнопки "Fork" в правом верхнем
       углу страницы.  Это создаст копию репозитория на вашем GitHub аккаунте.</p>
 
       <figure>
@@ -108,7 +108,7 @@ upstream        https://github.com/AlexandrAnatoliev/project-euler.git (fetch)
 upstream        https://github.com/AlexandrAnatoliev/project-euler.git (push)
 </pre>
 
-      <p>6. Выполните pull из upstream репозитория в вашу master ветку, 
+      <p>6. Выполните pull из upstream репозитория в вашу master ветку,
       чтобы синхронизировать ее с основным проектом:</p>
 
       <div class="vimcode">
@@ -128,7 +128,7 @@ upstream        https://github.com/AlexandrAnatoliev/project-euler.git (push)
       </div>
 
       <p>Сейчас вы готовы начать работать с issue!<br>
-      Помните, каждый раз сначала делать pull из upstream репозитория, чтобы держать содержимое 
+      Помните, каждый раз сначала делать pull из upstream репозитория, чтобы держать содержимое
       вашего локального репозитория в соответствии с главным проектом.</p>
 
       <p><i>Примечание: Рекомендую всегда создавать новую ветвь для каждого issue, который вы выполняете!
@@ -138,13 +138,13 @@ upstream        https://github.com/AlexandrAnatoliev/project-euler.git (push)
     <section>
       <h3>Задачи</h3>
 
-      <p>Проект Эйлер содержит более 800 различных задач различной трудности. Вы можете выбрать любую 
+      <p>Проект Эйлер содержит более 800 различных задач различной трудности. Вы можете выбрать любую
       задачу, которую вы хотите. Вы можете также выбрать и решить несколько задач. Только не забывайте
       создавать новую ветвь для каждой из них.</p>
 
       <p>Сначала, выберите задачу, которую вы хотите решать и откройте ее директорию:</p>
 <pre class="vimcode">
-  project-euler 
+  project-euler
   ├── Problem1/
   │   └── README.md
   ├── Problem2/
@@ -163,7 +163,7 @@ upstream        https://github.com/AlexandrAnatoliev/project-euler.git (push)
 
       <p>Например:</p>
 <pre class="vimcode">
-  project-euler 
+  project-euler
   ├── Problem1/
   │   ├── User1-cpp/
   │   ├── Username2-php/
@@ -181,7 +181,7 @@ upstream        https://github.com/AlexandrAnatoliev/project-euler.git (push)
 
       <p>Добавьте файлы с исходным кодом в вашу директорию (наличие README приветствуется).</p>
 
-      <p><i>Примечание: Избегайте лишних файлов (бинарные файлы или метаданные IDE) 
+      <p><i>Примечание: Избегайте лишних файлов (бинарные файлы или метаданные IDE)
         и проверьте что ваша программа работает корректно.</i></p>
 
       <p>Все корректные решения будут добавлены после ревью.</p>
@@ -196,7 +196,7 @@ upstream        https://github.com/AlexandrAnatoliev/project-euler.git (push)
     <section>
       <h3>Отправка ваших изменений</h3>
 
-      <p>После того как вы решили задачу, вы готовы отправить изменения.</p> 
+      <p>После того как вы решили задачу, вы готовы отправить изменения.</p>
 
       <p>1. Добавьте ваши изменения в отслеживание:</p>
 
@@ -226,7 +226,7 @@ upstream        https://github.com/AlexandrAnatoliev/project-euler.git (push)
       <ul>
         <li>Перейдите на ваш "форк" репозитория на GitHub.</li>
 
-        <li>Вы увидите надпись "fix-issue had recent pushes" (или как ваша ветка 
+        <li>Вы увидите надпись "fix-issue had recent pushes" (или как ваша ветка
           называется) и кнопку "Compare & pull request" рядом с ней.</li>
 
         <figure>
@@ -234,7 +234,7 @@ upstream        https://github.com/AlexandrAnatoliev/project-euler.git (push)
                src="images/compare-and-pull-request.png" class="large">
         </figure>
 
-        <li>Нажмите кнопку "Compare & pull request" и перейдете на страницу 
+        <li>Нажмите кнопку "Compare & pull request" и перейдете на страницу
           pull request оригинального репозитория проекта project-euler.</li>
 
         <figure>
@@ -242,7 +242,7 @@ upstream        https://github.com/AlexandrAnatoliev/project-euler.git (push)
                src="images/compare-and-pull-request-button.png" class="large">
         </figure>
 
-        <li>Заполните поля title и description подробностям о задаче и вашем ее решении. 
+        <li>Заполните поля title и description подробностям о задаче и вашем ее решении.
           Вы можете также добавить иную информацию, такую как скриншоты, если хотите.</li>
 
         <figure>
@@ -271,7 +271,7 @@ upstream        https://github.com/AlexandrAnatoliev/project-euler.git (push)
     <section>
       <h3>Контакты</h3>
 
-      <p>Столкнувшись с затруднениями, не стесняйтесь открыть issue, написать в 
+      <p>Столкнувшись с затруднениями, не стесняйтесь открыть issue, написать в
       <a href="https://github.com/AlexandrAnatoliev/project-euler/discussions/23"><b>Discussions</b></a>
       или мне на почту per-1986@list.ru.</p>
     </section>
