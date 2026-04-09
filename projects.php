@@ -9,7 +9,7 @@
           content="Мои проекты на PHP и других технологиях">
   </head>
   <body>
-    <?php include 'includes/header.php'; ?>
+    <?php include_once 'includes/header.php'; ?>
 
     <section>
       <h1 id="top">Projects</h1>

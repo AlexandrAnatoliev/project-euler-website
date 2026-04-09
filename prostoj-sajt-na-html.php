@@ -9,7 +9,7 @@
           content="Запускаем простой HTML сайт на VPS-сервере с XAMPP">
   </head>
   <body>
-    <?php include 'includes/header.php'; ?>
+    <?php include_once 'includes/header.php'; ?>
 
     <section>
       <h1 id="top">Простой сайт на HTML</h1>

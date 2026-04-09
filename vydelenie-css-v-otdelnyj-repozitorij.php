@@ -9,7 +9,7 @@
           content="Подключаем репозиторий с CSS-настройками как Git-подмодуль">
   </head>
   <body>
-    <?php include 'includes/header.php'; ?>
+    <?php include_once 'includes/header.php'; ?>
 
     <section>
       <h1 id="top">Выделение CSS-настроек в отдельный репозиторий</h1>
