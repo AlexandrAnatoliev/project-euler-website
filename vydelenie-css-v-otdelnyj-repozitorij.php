@@ -32,7 +32,7 @@
     <section>
       <h1 id="top">Выделение CSS-настроек в отдельный репозиторий</h1>
 
-      <p><a href="https://github.com/AlexandrAnatoliev/project-euler-css">Project-Euler-CSS</a> 
+      <p><a href="https://github.com/AlexandrAnatoliev/project-euler-css">Project-Euler-CSS</a>
       - это CSS-настройки для моего блога
       <a href="https://github.com/AlexandrAnatoliev/project-euler-blog">Project-Euler-Blog</a>.
       Выделение CSS-настроек в отдельный репозиторий позволяет
