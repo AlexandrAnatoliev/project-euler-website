@@ -39,7 +39,7 @@
 
       <p>SSL-сертификат я покупал в Timeweb:</p>
       <ul>
-        <li>Перейти во вкладку <b>Домены и SSL</b>;</li> 
+        <li>Перейти во вкладку <b>Домены и SSL</b>;</li>
         <li>Далее, <b>SSL-сертификаты</b>;</li>
         <li>Нажать на кнопку <b>Купить сертификат</b></li>
       </ul>
@@ -64,14 +64,14 @@ mkdir -p /opt/lampp/etc/ssl.key
       <div class="vimcode">
         vim /opt/lampp/etc/ssl.crt/project-euler.ru.crt
       </div>
-      <p>Вставить в него содержимое сертификата (включая строки <b>-----BEGIN CERTIFICATE-----</b> 
+      <p>Вставить в него содержимое сертификата (включая строки <b>-----BEGIN CERTIFICATE-----</b>
       и <b>-----END CERTIFICATE-----</b>).</p>
 
       <p>Создать файл ключа:</p>
       <div class="vimcode">
         vim /opt/lampp/etc/ssl.key/project-euler.ru.key
       </div>
-      <p>Вставить в него содержимое ключа (включая строки <b>-----BEGIN PRIVATE KEY-----</b> и 
+      <p>Вставить в него содержимое ключа (включая строки <b>-----BEGIN PRIVATE KEY-----</b> и
       <b>-----END PRIVATE KEY-----</b>).</p>
 
       <p>Установить права доступа:</p>
