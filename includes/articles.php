@@ -9,5 +9,4 @@ $article = [
     'link'          => '<a href="vydelenie-css-v-otdelnyj-repozitorij.php"><b>читать</b></a>',
     ],
 ];
-echo $article[0]['link'];
 ?>

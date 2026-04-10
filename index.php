@@ -19,13 +19,11 @@
     </section>
 
     <section>
-      <aside class="article-preview" aria-label="article 1">
-        <h4>Выделение CSS-настроек в отдельный репозиторий</h4>
-        <p>Project-Euler-CSS - это CSS-настройки для моего блога Project-Euler-Blog.
-        Выделение CSS-настроек в отдельный репозиторий позволяет
-        использовать их повторно в разных проектах и избавляет от необходимости
-        вносить одни и те же изменения в каждый проект...
-        <a href="vydelenie-css-v-otdelnyj-repozitorij.php"><b>читать</b></a> </p>
+      <?php include_once 'includes/articles.php'; ?>
+
+      <aside class="article-preview" aria-label=$article[0]['aria_label']>
+        <h4><?= $article[0]['header'] ?></h4>
+        <p><?= $article[0]['preview'] ?> <?= $article[0]['link'] ?></p>
       </aside>
 
       <aside class="article-preview" aria-label="article 2">
