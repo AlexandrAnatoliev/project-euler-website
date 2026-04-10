@@ -21,16 +21,12 @@
     <section>
       <?php include_once 'includes/articles.php'; ?>
 
-      <aside class="article-preview" aria-label=$article[0]['aria_label']>
-        <h4><?= $article[0]['header'] ?></h4>
-        <p><?= $article[0]['preview'] ?> <?= $article[0]['link'] ?></p>
-      </aside>
-
-      <aside class="article-preview" aria-label="article 2">
-        <h4>Установка XAMPP на сервер</h4>
-        <p>Краткий гайд...
-        <a href="ustanovka-xampp-na-server.php"><b>читать</b></a> </p>
-      </aside>
+      <?php for ($i = 1; $i >= 0; $i--) { ?>
+        <aside class="article-preview" aria-label=$article[$i]['aria_label']>
+          <h4><?= $article[$i]['header'] ?></h4>
+          <p><?= $article[$i]['preview'] ?> <?= $article[$i]['link'] ?></p>
+        </aside>
+      <?php } ?>
 
       <aside class="article-preview" aria-label="article 3">
         <h4>Простой сайт на HTML</h4>
