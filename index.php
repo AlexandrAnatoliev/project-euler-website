@@ -19,56 +19,14 @@
     </section>
 
     <section>
-      <aside class="article-preview" aria-label="article 1">
-        <h4>Выделение CSS-настроек в отдельный репозиторий</h4>
-        <p>Project-Euler-CSS - это CSS-настройки для моего блога Project-Euler-Blog.
-        Выделение CSS-настроек в отдельный репозиторий позволяет
-        использовать их повторно в разных проектах и избавляет от необходимости
-        вносить одни и те же изменения в каждый проект...
-        <a href="vydelenie-css-v-otdelnyj-repozitorij.php"><b>читать</b></a> </p>
-      </aside>
+      <?php include_once 'includes/articles.php'; ?>
 
-      <aside class="article-preview" aria-label="article 2">
-        <h4>Установка XAMPP на сервер</h4>
-        <p>Краткий гайд...
-        <a href="ustanovka-xampp-na-server.php"><b>читать</b></a> </p>
-      </aside>
-
-      <aside class="article-preview" aria-label="article 3">
-        <h4>Простой сайт на HTML</h4>
-        <p>Чтобы сделать сайт доступным из любой точки мира, самым простым вариантом
-        будет запустить его HTML-страницу на VPS-сервере с XAMPP.
-        Весь процесс можно разбить на несколько простых шагов...
-        <a href="prostoj-sajt-na-html.php"><b>читать</b></a> </p>
-      </aside>
-
-      <aside class="article-preview" aria-label="article 4">
-        <h4>Установка SSL-сертификата на сайт</h4>
-        <p>Браузеры помечают сайты без HTTPS как «небезопасные».
-        Чтобы сайт работал через HTTPS небходимо установить SSL-сертификат...
-        <a href="ustanovka-ssl-sertifikata-na-sajt.php"><b>читать</b></a> </p>
-      </aside>
-
-      <aside class="article-preview" aria-label="article 5">
-        <h4>Проект Эйлер 1 задача на PHP</h4>
-        <p> Решая эту задачу, постарался не только отработать конструкции языка <b>PHP</b>,
-        но и сделал небольшой <b>онлайн-калькулятор</b>, позволяющий проверить ваши вычисления...
-        <a href="project-euler-1-php.php"><b>читать</b></a> </p>
-      </aside>
-
-      <aside class="article-preview" aria-label="article 6">
-        <h4>Project-Euler Open Source</h4>
-        <p><b>Project-Euler</b> - это опенсорс проект, который помогает изучить
-        и попрактиковать конструкции различных языков программирования...
-        <a href="project-euler-open-source.php"><b>читать</b></a> </p>
-      </aside>
-
-      <aside class="article-preview" aria-label="article 7">
-        <h4>Проект Эйлер 2 задача на PHP</h4>
-        <p>Четные числа Фибоначчи: реализация на PHP с онлайн-калькулятором для проверки вычислений"...
-        <a href="project-euler-2-php.php"><b>читать</b></a> </p>
-      </aside>
-    </section>
+      <?php for ($i = 6; $i >= 0; $i--) { ?>
+        <aside class="article-preview" aria-label=$article[$i]['aria_label']>
+          <h4><?= $article[$i]['header'] ?></h4>
+          <p><?= $article[$i]['preview'] ?> <?= $article[$i]['link'] ?></p>
+        </aside>
+      <?php } ?>
 
     <?php include_once 'includes/footer.php'; ?>
   </body>
