@@ -18,6 +18,16 @@
     </section>
 
     <section>
+      <?php include_once 'includes/articles.php'; ?>
+
+      <?php for ($i = 0; $i < count($article); $i++) { ?>
+        <aside class="article-preview" aria-label=$article[$i]['aria_label']>
+          <h4><?= $article[$i]['header'] ?></h4>
+          <p><?= $article[$i]['preview'] ?> <?= $article[$i]['link'] ?></p>
+        </aside>
+      <?php } ?>
+    </section>
+
       <aside class="article-preview" aria-label="article 5">
         <h4>Числа, кратные 3 или 5</h4>
         <p> Решая эту задачу, постарался не только отработать конструкции языка <b>PHP</b>,

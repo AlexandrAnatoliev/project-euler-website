@@ -1,6 +1,7 @@
 <?php
 $article = [
   ['aria_label'   =>  'article 1',
+  'topic'         =>  'none',
   'header'        =>  'Выделение CSS-настроек в отдельный репозиторий',
   'preview'       => 'Project-Euler-CSS - это CSS-настройки для моего блога Project-Euler-Blog.
   Выделение CSS-настроек в отдельный репозиторий позволяет
@@ -9,11 +10,13 @@ $article = [
   'link'          => '<a href="vydelenie-css-v-otdelnyj-repozitorij.php"><b>читать</b></a>',
   ],
   ['aria_label'   =>  'article 2',
+  'topic'         =>  'none',
   'header'        =>  'Установка XAMPP на сервер',
   'preview'       => 'Краткий гайд...',
   'link'          => '<a href="ustanovka-xampp-na-server.php"><b>читать</b></a>',
   ],
   ['aria_label'   =>  'article 3',
+  'topic'         =>  'none',
   'header'        =>  'Простой сайт на HTML',
   'preview'       => 'Чтобы сделать сайт доступным из любой точки мира, самым простым вариантом
   будет запустить его HTML-страницу на VPS-сервере с XAMPP.
@@ -21,24 +24,28 @@ $article = [
   'link'          => '<a href="prostoj-sajt-na-html.php"><b>читать</b></a>',
   ],
   ['aria_label'   =>  'article 4',
+  'topic'         =>  'none',
   'header'        =>  'Установка SSL-сертификата на сайт',
   'preview'       => 'Браузеры помечают сайты без HTTPS как «небезопасные».
   Чтобы сайт работал через HTTPS небходимо установить SSL-сертификат...',
   'link'          => '<a href="ustanovka-ssl-sertifikata-na-sajt.php"><b>читать</b></a>',
   ],
   ['aria_label'   =>  'article 5',
+  'topic'         =>  'problem',
   'header'        =>  'Проект Эйлер 1 задача на PHP',
   'preview'       => 'Решая эту задачу, постарался не только отработать конструкции языка <b>PHP</b>,
   но и сделал небольшой <b>онлайн-калькулятор</b>, позволяющий проверить ваши вычисления...',
   'link'          => '<a href="project-euler-1-php.php"><b>читать</b></a>',
   ],
   ['aria_label'   =>  'article 6',
+  'topic'         =>  'none',
   'header'        =>  'Project-Euler Open Source',
   'preview'       => '<b>Project-Euler</b> - это опенсорс проект, который помогает изучить
   и попрактиковать конструкции различных языков программирования...',
   'link'          => '<a href="project-euler-open-source.php"><b>читать</b></a>',
   ],
   ['aria_label'   =>  'article 7',
+  'topic'         =>  'problem',
   'header'        =>  'Проект Эйлер 2 задача на PHP',
   'preview'       => 'Четные числа Фибоначчи: реализация на PHP с онлайн-калькулятором для проверки вычислений"...',
   'link'          => '<a href="project-euler-2-php.php"><b>читать</b></a>',
