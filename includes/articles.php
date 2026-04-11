@@ -44,4 +44,3 @@ $article = [
   'link'          => '<a href="project-euler-2-php.php"><b>читать</b></a>',
   ],
 ];
-?>
