@@ -18,29 +18,16 @@
     </section>
 
     <section>
-      <aside class="article-preview" aria-label="article 1">
-        <h4>Project-Euler-CSS</h4>
-        <p>Это CSS-настройки для моего блога Project-Euler-Blog.
-        Выделение CSS-настроек в отдельный репозиторий позволяет
-        использовать их повторно в разных проектах и избавляет от необходимости
-        вносить одни и те же изменения в каждый проект...
-        <a href="vydelenie-css-v-otdelnyj-repozitorij.php"><b>читать</b></a> </p>
-      </aside>
+      <?php include_once 'includes/articles.php'; ?>
 
-      <aside class="article-preview" aria-label="article 3">
-        <h4>Project-Euler-Blog</h4>
-        <p>Простой сайт на HTML - сборник статей для моего блога.<br>
-        Я использую его для более легкой верстки, т.к. HTML-файлы можно смотреть просто в браузере,
-        не добавляя в базу данных и не запуская XAMPP...
-        <a href="prostoj-sajt-na-html.php"><b>читать</b></a> </p>
-      </aside>
-
-      <aside class="article-preview" aria-label="article 6">
-        <h4>Project-Euler Open Source</h4>
-        <p><b>Project-Euler</b> - это опенсорс-проект, который помогает изучить
-        и попрактиковать конструкции различных языков программирования...
-        <a href="project-euler-open-source.php"><b>читать</b></a> </p>
-      </aside>
+      <?php for ($i = 0; $i < count($article); $i++) { ?>
+        <?php if ($article[$i]['topic'] == 'project') { ?>
+          <aside class="article-preview" aria-label=$article[$i]['aria_label']>
+            <h4><?= $article[$i]['alt_header'] ?></h4>
+            <p><?= $article[$i]['preview'] ?> <?= $article[$i]['link'] ?></p>
+          </aside>
+        <?php } ?>
+      <?php } ?>
     </section>
 
     <?php include_once 'includes/footer.php'; ?>

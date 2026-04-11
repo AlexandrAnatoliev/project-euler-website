@@ -1,7 +1,7 @@
 <?php
 $article = [
   ['aria_label'   => 'article 1',
-  'topic'         => 'none',
+  'topic'         => 'project',
   'header'        => 'Выделение CSS-настроек в отдельный репозиторий',
   'alt_header'    => 'Project-Euler-CSS',
   'preview'       => 'Project-Euler-CSS - это CSS-настройки для моего блога Project-Euler-Blog.
@@ -18,7 +18,7 @@ $article = [
   'link'          => '<a href="ustanovka-xampp-na-server.php"><b>читать</b></a>',
   ],
   ['aria_label'   => 'article 3',
-  'topic'         => 'none',
+  'topic'         => 'project',
   'header'        => 'Простой сайт на HTML',
   'alt_header'    => 'Project-Euler-Blog',
   'preview'       => 'Чтобы сделать сайт доступным из любой точки мира, самым простым вариантом
@@ -43,7 +43,7 @@ $article = [
   'link'          => '<a href="project-euler-1-php.php"><b>читать</b></a>',
   ],
   ['aria_label'   => 'article 6',
-  'topic'         => 'none',
+  'topic'         => 'project',
   'header'        => 'Project-Euler Open Source',
   'alt_header'    => 'Project-Euler Open Source',
   'preview'       => '<b>Project-Euler</b> - это опенсорс проект, который помогает изучить
