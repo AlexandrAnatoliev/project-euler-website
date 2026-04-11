@@ -23,7 +23,7 @@
       <?php for ($i = 0; $i < count($article); $i++) { ?>
         <?php if ($article[$i]['topic'] == 'problem') { ?>
           <aside class="article-preview" aria-label=$article[$i]['aria_label']>
-            <h4><?= $article[$i]['header'] ?></h4>
+            <h4><?= $article[$i]['alt_header'] ?></h4>
             <p><?= $article[$i]['preview'] ?> <?= $article[$i]['link'] ?></p>
           </aside>
         <?php } ?>
