@@ -21,20 +21,12 @@
     <section>
       <?php include_once 'includes/articles.php'; ?>
 
-      <?php for ($i = 1; $i >= 0; $i--) { ?>
+      <?php for ($i = 2; $i >= 0; $i--) { ?>
         <aside class="article-preview" aria-label=$article[$i]['aria_label']>
           <h4><?= $article[$i]['header'] ?></h4>
           <p><?= $article[$i]['preview'] ?> <?= $article[$i]['link'] ?></p>
         </aside>
       <?php } ?>
-
-      <aside class="article-preview" aria-label="article 3">
-        <h4>Простой сайт на HTML</h4>
-        <p>Чтобы сделать сайт доступным из любой точки мира, самым простым вариантом
-        будет запустить его HTML-страницу на VPS-сервере с XAMPP.
-        Весь процесс можно разбить на несколько простых шагов...
-        <a href="prostoj-sajt-na-html.php"><b>читать</b></a> </p>
-      </aside>
 
       <aside class="article-preview" aria-label="article 4">
         <h4>Установка SSL-сертификата на сайт</h4>

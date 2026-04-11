@@ -1,17 +1,24 @@
 <?php
 $article = [
-    ['aria_label'   =>  'article 1',
-    'header'        =>  'Выделение CSS-настроек в отдельный репозиторий',
-    'preview'       => 'Project-Euler-CSS - это CSS-настройки для моего блога Project-Euler-Blog.
-    Выделение CSS-настроек в отдельный репозиторий позволяет
-    использовать их повторно в разных проектах и избавляет от необходимости
-    вносить одни и те же изменения в каждый проект...',
-    'link'          => '<a href="vydelenie-css-v-otdelnyj-repozitorij.php"><b>читать</b></a>',
-    ],
-    ['aria_label'   =>  'article 2',
-    'header'        =>  'Установка XAMPP на сервер',
-    'preview'       => 'Краткий гайд...',
-    'link'          => '<a href="ustanovka-xampp-na-server.php"><b>читать</b></a>',
-    ],
+  ['aria_label'   =>  'article 1',
+  'header'        =>  'Выделение CSS-настроек в отдельный репозиторий',
+  'preview'       => 'Project-Euler-CSS - это CSS-настройки для моего блога Project-Euler-Blog.
+  Выделение CSS-настроек в отдельный репозиторий позволяет
+  использовать их повторно в разных проектах и избавляет от необходимости
+  вносить одни и те же изменения в каждый проект...',
+  'link'          => '<a href="vydelenie-css-v-otdelnyj-repozitorij.php"><b>читать</b></a>',
+  ],
+  ['aria_label'   =>  'article 2',
+  'header'        =>  'Установка XAMPP на сервер',
+  'preview'       => 'Краткий гайд...',
+  'link'          => '<a href="ustanovka-xampp-na-server.php"><b>читать</b></a>',
+  ],
+  ['aria_label'   =>  'article 3',
+  'header'        =>  'Простой сайт на HTML',
+  'preview'       => 'Чтобы сделать сайт доступным из любой точки мира, самым простым вариантом
+  будет запустить его HTML-страницу на VPS-сервере с XAMPP.
+  Весь процесс можно разбить на несколько простых шагов...',
+  'link'          => '<a href="prostoj-sajt-na-html.php"><b>читать</b></a>',
+  ],
 ];
 ?>
