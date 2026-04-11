@@ -21,19 +21,12 @@
     <section>
       <?php include_once 'includes/articles.php'; ?>
 
-      <?php for ($i = 2; $i >= 0; $i--) { ?>
+      <?php for ($i = 3; $i >= 0; $i--) { ?>
         <aside class="article-preview" aria-label=$article[$i]['aria_label']>
           <h4><?= $article[$i]['header'] ?></h4>
           <p><?= $article[$i]['preview'] ?> <?= $article[$i]['link'] ?></p>
         </aside>
       <?php } ?>
-
-      <aside class="article-preview" aria-label="article 4">
-        <h4>Установка SSL-сертификата на сайт</h4>
-        <p>Браузеры помечают сайты без HTTPS как «небезопасные».
-        Чтобы сайт работал через HTTPS небходимо установить SSL-сертификат...
-        <a href="ustanovka-ssl-sertifikata-na-sajt.php"><b>читать</b></a> </p>
-      </aside>
 
       <aside class="article-preview" aria-label="article 5">
         <h4>Проект Эйлер 1 задача на PHP</h4>

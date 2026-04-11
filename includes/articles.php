@@ -20,5 +20,11 @@ $article = [
   Весь процесс можно разбить на несколько простых шагов...',
   'link'          => '<a href="prostoj-sajt-na-html.php"><b>читать</b></a>',
   ],
+  ['aria_label'   =>  'article 4',
+  'header'        =>  'Установка SSL-сертификата на сайт',
+  'preview'       => 'Браузеры помечают сайты без HTTPS как «небезопасные».
+  Чтобы сайт работал через HTTPS небходимо установить SSL-сертификат...',
+  'link'          => '<a href="ustanovka-ssl-sertifikata-na-sajt.php"><b>читать</b></a>',
+  ],
 ];
 ?>
