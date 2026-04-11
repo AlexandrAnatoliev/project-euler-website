@@ -26,5 +26,22 @@ $article = [
   Чтобы сайт работал через HTTPS небходимо установить SSL-сертификат...',
   'link'          => '<a href="ustanovka-ssl-sertifikata-na-sajt.php"><b>читать</b></a>',
   ],
+  ['aria_label'   =>  'article 5',
+  'header'        =>  'Проект Эйлер 1 задача на PHP',
+  'preview'       => 'Решая эту задачу, постарался не только отработать конструкции языка <b>PHP</b>,
+  но и сделал небольшой <b>онлайн-калькулятор</b>, позволяющий проверить ваши вычисления...',
+  'link'          => '<a href="project-euler-1-php.php"><b>читать</b></a>',
+  ],
+  ['aria_label'   =>  'article 6',
+  'header'        =>  'Project-Euler Open Source',
+  'preview'       => '<b>Project-Euler</b> - это опенсорс проект, который помогает изучить
+  и попрактиковать конструкции различных языков программирования...',
+  'link'          => '<a href="project-euler-open-source.php"><b>читать</b></a>',
+  ],
+  ['aria_label'   =>  'article 7',
+  'header'        =>  'Проект Эйлер 2 задача на PHP',
+  'preview'       => 'Четные числа Фибоначчи: реализация на PHP с онлайн-калькулятором для проверки вычислений"...',
+  'link'          => '<a href="project-euler-2-php.php"><b>читать</b></a>',
+  ],
 ];
 ?>
