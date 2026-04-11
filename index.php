@@ -22,12 +22,10 @@
       <?php include_once 'includes/articles.php'; ?>
 
       <?php for ($i = count($article) - 1; $i >= 0; $i--) { ?>
-        <?php if ($articlep[$i]['topic'] == 'problem') { ?>
-          <aside class="article-preview" aria-label=$article[$i]['aria_label']>
-            <h4><?= $article[$i]['header'] ?></h4>
-            <p><?= $article[$i]['preview'] ?> <?= $article[$i]['link'] ?></p>
-          </aside>
-        <?php } ?>
+        <aside class="article-preview" aria-label=$article[$i]['aria_label']>
+          <h4><?= $article[$i]['header'] ?></h4>
+          <p><?= $article[$i]['preview'] ?> <?= $article[$i]['link'] ?></p>
+        </aside>
       <?php } ?>
     </section>
 
